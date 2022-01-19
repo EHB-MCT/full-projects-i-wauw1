@@ -12,7 +12,7 @@
             <div>
                 <h1>WAUW</h1>
             </div>
-            <nav>
+            <nav class="desktop">
                 <ul>
                     <li>
                         <a class="actief" href="projecten.html"> Projecten</a>
@@ -28,7 +28,31 @@
                     </li>
                 </ul>
             </nav>
+            <article id="hamburger" onclick="toonLijst();" class="hamburger-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </article>
+            <article onclick="sluitLijst();" id="x-nav-id" class="x-nav">
+                <h2>X</h2>
+            </article>
         </header>
+        <aside id="lijstHamburger" class="hamburger-check">
+            <ul>
+                <li>
+                    <a class="actief" href="projecten.html"> Projecten</a>
+                </li>
+                <li>
+                    <a href="#"> Agenda</a>
+                </li>
+                <li>
+                    <a href="over.html"> Over ons</a>
+                </li>
+                <li>
+                    <a href="#"> Contact</a>
+                </li>
+            </ul>
+        </aside>
         <main>
             <h1>Onze vorige projecten</h1>
             <div class="alleProjecten">

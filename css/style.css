@@ -10,6 +10,84 @@ body {
     padding: 4%;
 }
 
+.hamburger-check {
+    height: 0;
+    overflow: hidden;
+}
+
+.hamburger-check li {
+    font-size: 40px;
+}
+
+.desktop {
+    visibility: hidden;
+}
+
+.hamburger-nav {
+    display: grid;
+    justify-content: end;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.x-nav {
+    color: #231f20;
+    display: grid;
+    justify-content: end;
+    visibility: hidden;
+    font-size: 50px;
+}
+
+.container-grid-proj article span,
+.container-grid-over article span {
+    width: 100px;
+    height: 10px;
+    background-color: #231f20;
+    animation: 1s ease-out hamburgerNav;
+}
+
+
+@keyframes hamburgerNav {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes hamburgerNavTwee {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75px;
+    }
+}
+
+@keyframes hamburgerNavDrie {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50px;
+    }
+}
+
+.container-grid-proj article span:nth-child(2),
+.container-grid-over article span:nth-child(2) {
+    width: 75px;
+    animation: 1s ease-out hamburgerNavTwee;
+}
+
+.container-grid-proj article span:nth-child(3),
+.container-grid-over article span:nth-child(3) {
+    width: 50px;
+    animation: 1s ease-out hamburgerNavDrie
+}
+
 h1,
 h2,
 p,
@@ -36,7 +114,7 @@ h1 {
 .container-grid-proj header,
 .container-grid-over header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container-grid-home header div,
@@ -225,6 +303,20 @@ h1 {
 @media (min-width: 760px) {}
 
 @media (min-width: 1200px) {
+    .desktop {
+        visibility: visible;
+    }
+
+    .hamburger-nav {
+        display: none;
+    }
+
+    .container-grid-home header,
+    .container-grid-proj header,
+    .container-grid-over header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     .container-grid-home,
     .container-grid-proj,
