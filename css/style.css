@@ -1,1 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body {
+    background-color: #fefced;
+}
+
+.container-grid-home {
+    padding: 4%;
+}
+
+h1,
+h2,
+p,
+li,
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #231f20;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+.container-grid-home header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-grid-home header div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-grid-home header h1 {
+    font-size: 75px;
+    color: #6b8041;
+}
+
+.container-grid-home header nav {
+    display: grid;
+    align-items: center;
+}
+
+.container-grid-home header nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container-grid-home header nav ul li {
+    display: grid;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.container-grid-home div:nth-child(1),
+.container-grid-home div:nth-child(2) {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-grid-home main h1 {
+    font-size: 7em;
+}
+
+.container-grid-home main h2 {
+    font-size: 4em;
+}
+
+.container-grid-home main .knop {
+    margin-top: 2%;
+}
+
+.container-grid-home main .knop a {
+    border: 2px solid #231f20;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #231f20;
+    padding: 0% 2%;
+    font-size: 19px;
+}
+
+main div figure {
+    width: 300px;
+    height: 35px;
+    margin-top: -40px;
+    background-color: #6b8041;
+}
+
+@media (min-width: 480px) {
+
+    .container-grid-home main {
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr;
+        height: 81vh;
+
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-grid-home main {
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 1fr;
+        height: 81vh;
+        align-content: center;
+    }
+
+    .container-grid-home main img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .container-grid-home {
+        padding: 2%;
+    }
+
+
+    .container-grid-home header div:nth-child(1) {
+        display: grid;
+        padding-left: 6%;
+        align-items: center;
+    }
+
+    .container-grid-home main div:nth-child(1) {
+        justify-content: start;
+        padding-left: 20%;
+    }
+
+    .container-grid-home main div:nth-child(2) {
+        margin-right: 20%;
+        z-index: -5;
+
+    }
+
+    .container-grid-home div img {
+        /*  position: absolute;
+        z-index: -10;
+        left: 42%;
+        top: 25%;
+        width: 52% !important;
+*/
+        width: auto;
+    }
+
+    .container-grid-home main h1 {
+        font-size: 11em;
+    }
+
+    .container-grid-home main h2 {
+        font-size: 9em;
+    }
+
+
+
+    .container-grid-home nav ul li a:hover {
+        color: #231f20;
+        animation: 1s ease-out effectSchuivenNav;
+        background-color: #6b8041;
+
+    }
+
+    .container-grid-home main div:nth-child(1) {
+        animation: 1s ease-out 0s 1 effectSchuiven;
+    }
+
+    .container-grid-home main div:nth-child(2) {
+        animation: 1s ease-out 0s 1 effectSchuivenFoto;
+
+    }
+
+    @keyframes effectSchuivenNav {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    @keyframes effectSchuiven {
+        0% {
+            transform: translateY(-10%);
+            opacity: 25%;
+        }
+
+        100% {
+            transfrom: translateY(0);
+            opacity: 100%;
+        }
+    }
+
+    @keyframes effectSchuivenFoto {
+        0% {
+            transform: translateY(-15%);
+        }
+
+        100% {
+            transfrom: translateY(0);
+        }
+    }
+
+    .container-grid-home main .knop a {
+        font-size: 24px;
+    }
+
+}
