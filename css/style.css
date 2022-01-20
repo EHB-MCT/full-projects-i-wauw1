@@ -34,6 +34,7 @@ body {
     display: grid;
     justify-content: end;
     visibility: hidden;
+    display: none;
     font-size: 50px;
 }
 
@@ -103,10 +104,6 @@ h1 {
 }
 
 .container-grid-proj .actief {
-    background-color: #fbb040;
-}
-
-.container-grid-over .actief {
     background-color: #6b8041;
 }
 
@@ -124,15 +121,27 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.container-grid-home header h1,
-.container-grid-over header h1 {
+.container-grid-home header h1 {
     font-size: 75px;
     color: #6b8041;
 }
 
 .container-grid-proj header h1 {
     font-size: 75px;
-    color: #fbb040;
+    color: #6b8041;
+}
+
+.container-grid-over header h1 {
+    font-size: 75px;
+    color: white;
+}
+
+.container-grid-over header li a {
+    color: white !important;
+}
+
+.container-grid-over header aside h2 {
+    color: white;
 }
 
 .container-grid-home header nav,
@@ -211,7 +220,7 @@ h1 {
     width: 300px;
     height: 35px;
     margin-top: -40px;
-    background-color: #fbb040;
+    background-color: #6b8041;
 }
 
 .container-grid-over div figure {
@@ -300,6 +309,18 @@ h1 {
 
 }
 
+footer {
+    color: #fefced;
+    text-align: center;
+    background-color: #231f20;
+    padding: 1% 1% 1% 1%;
+}
+
+footer p {
+    color: #fefced;
+    padding: 0 !important;
+}
+
 @media (min-width: 760px) {}
 
 @media (min-width: 1200px) {
@@ -316,12 +337,31 @@ h1 {
     .container-grid-over header {
         display: grid;
         grid-template-columns: 1fr 1fr;
+
     }
 
     .container-grid-home,
     .container-grid-proj,
     .container-grid-over {
         padding: 2%;
+    }
+
+    .container-grid-over header {
+        background-image: url("../images/Bewegendestad1.jpeg");
+        height: 90vh;
+        color: white;
+        grid-template-rows: 1fr 3fr;
+    }
+
+    .container-grid-over header aside {
+        display: grid;
+        align-items: center;
+    }
+
+    .container-grid-over header aside h1 {
+        color: #231f20;
+        background-color: #fefced;
+        padding: 6%;
     }
 
     .container-grid-over main {
@@ -407,7 +447,7 @@ h1 {
     .container-grid-proj nav ul li a:hover {
         color: #231f20;
         animation: 1s ease-out effectSchuivenNav;
-        background-color: #fbb040;
+        background-color: #6b8041;
     }
 
     .container-grid-home main div section figure {
@@ -519,6 +559,18 @@ h1 {
         padding-bottom: 2%;
     }
 
+    .container-grid-over main .images-over {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
 
+    .container-grid-over main .images-over img {
+        width: 100%;
+    }
+
+    .container-grid-proj main .blub {
+        margin-top: 5%;
+    }
 
 }
