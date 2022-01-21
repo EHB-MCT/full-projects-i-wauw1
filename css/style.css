@@ -362,6 +362,7 @@ footer p {
         color: #231f20;
         background-color: #fefced;
         padding: 6%;
+        width: 53%;
     }
 
     .container-grid-over main {
@@ -571,6 +572,14 @@ footer p {
 
     .container-grid-proj main .blub {
         margin-top: 5%;
+    }
+
+    .container-grid-over main article {
+        padding: 4%;
+    }
+
+    .container-grid-over aside section {
+        padding: 5%;
     }
 
 }
