@@ -121,6 +121,13 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.container-grid-home header div img,
+.container-grid-proj header div img,
+.container-grid-over header div img {
+    width: 100%;
+}
+
+
 .container-grid-home header h1 {
     font-size: 75px;
     color: #6b8041;
@@ -137,7 +144,7 @@ h1 {
 }
 
 .container-grid-over header li a {
-    color: white !important;
+    color: white;
 }
 
 .container-grid-over header aside h2 {
@@ -451,6 +458,12 @@ footer p {
         background-color: #6b8041;
     }
 
+    .container-grid-over nav ul li a:hover {
+        color: #231f20;
+        animation: 1s ease-out effectSchuivenNav;
+        background-color: white;
+    }
+
     .container-grid-home main div section figure {
         animation: 1s ease-out 0s 1 effectSchuivenLijntje;
     }
@@ -576,6 +589,8 @@ footer p {
 
     .container-grid-over main article {
         padding: 4%;
+        display: flex;
+        flex-direction: column;
     }
 
     .container-grid-over aside section {
