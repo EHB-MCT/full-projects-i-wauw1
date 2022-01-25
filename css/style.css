@@ -6,7 +6,8 @@ body {
 
 .container-grid-home,
 .container-grid-proj,
-.container-grid-over {
+.container-grid-over,
+.container-grid-agenda {
     padding: 4%;
 }
 
@@ -77,6 +78,7 @@ body {
     }
 }
 
+
 .container-grid-proj article span:nth-child(2),
 .container-grid-over article span:nth-child(2) {
     width: 75px;
@@ -91,9 +93,11 @@ body {
 
 h1,
 h2,
+h3,
 p,
 li,
-a {
+a,
+form {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #231f20;
@@ -109,7 +113,8 @@ h1 {
 
 .container-grid-home header,
 .container-grid-proj header,
-.container-grid-over header {
+.container-grid-over header,
+.container-grid-agenda header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -123,8 +128,9 @@ h1 {
 
 .container-grid-home header div img,
 .container-grid-proj header div img,
-.container-grid-over header div img {
-    width: 100%;
+.container-grid-over header div img,
+.container-grid-agenda header div img {
+    width: 0%;
 }
 
 
@@ -153,21 +159,24 @@ h1 {
 
 .container-grid-home header nav,
 .container-grid-proj header nav,
-.container-grid-over header nav {
+.container-grid-over header nav,
+.container-grid-agenda header nav {
     display: grid;
     align-items: center;
 }
 
 .container-grid-home header nav ul,
 .container-grid-proj header nav ul,
-.container-grid-over header nav ul {
+.container-grid-over header nav ul,
+.container-grid-agenda header nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .container-grid-home header nav ul li,
 .container-grid-proj header nav ul li,
-.container-grid-over header nav ul li {
+.container-grid-over header nav ul li,
+.container-grid-agenda header nav ul li {
     display: grid;
     justify-content: center;
     font-weight: 500;
@@ -183,14 +192,16 @@ h1 {
 
 .container-grid-home main h1,
 .container-grid-proj main h1,
-.container-grid-over main h1 {
+.container-grid-over main h1,
+.container-grid-agenda main h1 {
     font-size: 6em;
 }
 
 .container-grid-home main h2,
 .container-grid-proj main h2,
 .container-grid-over main h2,
-.container-grid-over aside h2 {
+.container-grid-over aside h2,
+.container-grid-agenda main h2 {
     font-size: 4em;
 }
 
@@ -236,10 +247,6 @@ h1 {
     margin-top: -24px;
     background-color: #6b8041;
 }
-
-
-
-
 
 .container-grid-home main {
     display: grid;
@@ -341,7 +348,8 @@ footer p {
 
     .container-grid-home header,
     .container-grid-proj header,
-    .container-grid-over header {
+    .container-grid-over header,
+    .container-grid-agenda header {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -349,7 +357,8 @@ footer p {
 
     .container-grid-home,
     .container-grid-proj,
-    .container-grid-over {
+    .container-grid-over,
+    .container-grid-agenda {
         padding: 2%;
     }
 
@@ -551,6 +560,16 @@ footer p {
         }
     }
 
+    @keyframes tekstCookie {
+        0% {
+            opacity: 0;
+
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
 
     .container-grid-proj main div img {
         filter: grayscale(100%);
@@ -576,7 +595,7 @@ footer p {
     .container-grid-over main .images-over {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 10px;
+
     }
 
     .container-grid-over main .images-over img {
@@ -597,4 +616,130 @@ footer p {
         padding: 5%;
     }
 
+    .box-test {
+        animation: fade-in-overlay .2s ease-in-out forwards;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        background-color: #231f209c;
+    }
+
+    .box-test .text-box {
+        animation: 1s ease-out 0s 1 tekstCookie;
+        position: absolute;
+        background-color: white;
+        max-width: 35%;
+        top: 40%;
+        border-radius: 6px;
+        margin: auto;
+        padding: 22px;
+        left: 32%;
+    }
+
+    .box-test h3,
+    .container-grid-agenda h3 {
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .box-test .text-box p {
+        margin-bottom: 15px;
+        line-height: 22px;
+    }
+
+    .group-knoppen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 53px;
+        text-align: center;
+    }
+
+    .group-knoppen a:nth-child(1) {
+        padding: 5%;
+        background-color: #6b8041;
+        border-radius: 5px;
+    }
+
+    .group-knoppen a:nth-child(1):hover {
+        background-color: #839e4e;
+    }
+
+    .group-knoppen a:nth-child(2) {
+        padding: 5%;
+        background-color: #ffba01;
+        border-radius: 5px;
+    }
+
+    .group-knoppen a:nth-child(2):hover {
+        background-color: #fdcf4e;
+    }
+
+    .group-knoppen a:nth-child(3) {
+        padding: 5%;
+        background-color: #2c366b;
+        border-radius: 5px;
+    }
+
+    .group-knoppen a:nth-child(3):hover {
+        background-color: #43529b;
+    }
+
+    .container-grid-agenda main {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-gap: 28px;
+    }
+
+    .container-grid-agenda main .agendaAlles {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+    .sleutelwoordKind {
+        background-color: #6b8041;
+    }
+
+    .sleutelwoordArchi {
+        background-color: #ffba01;
+    }
+
+    .container-grid-agenda .groupAgenda {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+        height: 220px;
+        overflow: hidden;
+    }
+
+    .container-grid-agenda .groupAgenda section {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .container-grid-agenda main div:nth-child(2) section {
+        background-image: url("../images/minigolf1-over.jpg");
+    }
+
+    .container-grid-agenda main div:nth-child(3) section {
+        background-image: url("../images/Zomercafe4.jpeg");
+    }
+
+    .container-grid-agenda main .agendaAlles figure {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .agendaAlles {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .container-grid-agenda main .agendaAlles article {
+        padding: 6%;
+    }
 }
