@@ -7,7 +7,7 @@ body {
 .container-grid-home,
 .container-grid-proj,
 .container-grid-over,
-.container-grid-agenda {
+.container-grid-agendar {
     padding: 4%;
 }
 
@@ -97,7 +97,8 @@ h3,
 p,
 li,
 a,
-form {
+form,
+input {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #231f20;
@@ -114,14 +115,16 @@ h1 {
 .container-grid-home header,
 .container-grid-proj header,
 .container-grid-over header,
-.container-grid-agenda header {
+.container-grid-agenda header,
+.container-grid-contact header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .container-grid-home header div,
 .container-grid-proj header div,
-.container-grid-over header div {
+.container-grid-over header div,
+.container-grid-contact header div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -129,8 +132,9 @@ h1 {
 .container-grid-home header div img,
 .container-grid-proj header div img,
 .container-grid-over header div img,
-.container-grid-agenda header div img {
-    width: 0%;
+.container-grid-agenda header div img,
+.container-grid-contact header div img {
+    width: 100%;
 }
 
 
@@ -160,7 +164,8 @@ h1 {
 .container-grid-home header nav,
 .container-grid-proj header nav,
 .container-grid-over header nav,
-.container-grid-agenda header nav {
+.container-grid-agenda header nav,
+.container-grid-contact header nav {
     display: grid;
     align-items: center;
 }
@@ -168,7 +173,8 @@ h1 {
 .container-grid-home header nav ul,
 .container-grid-proj header nav ul,
 .container-grid-over header nav ul,
-.container-grid-agenda header nav ul {
+.container-grid-agenda header nav ul,
+.container-grid-contact header nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -176,7 +182,8 @@ h1 {
 .container-grid-home header nav ul li,
 .container-grid-proj header nav ul li,
 .container-grid-over header nav ul li,
-.container-grid-agenda header nav ul li {
+.container-grid-agenda header nav ul li,
+.container-grid-contact header nav ul li {
     display: grid;
     justify-content: center;
     font-weight: 500;
@@ -193,7 +200,8 @@ h1 {
 .container-grid-home main h1,
 .container-grid-proj main h1,
 .container-grid-over main h1,
-.container-grid-agenda main h1 {
+.container-grid-agenda main h1,
+.container-grid-contact main h1 {
     font-size: 6em;
 }
 
@@ -201,7 +209,8 @@ h1 {
 .container-grid-proj main h2,
 .container-grid-over main h2,
 .container-grid-over aside h2,
-.container-grid-agenda main h2 {
+.container-grid-agenda main h2,
+.container-grid-contact main h2 {
     font-size: 4em;
 }
 
@@ -349,7 +358,8 @@ footer p {
     .container-grid-home header,
     .container-grid-proj header,
     .container-grid-over header,
-    .container-grid-agenda header {
+    .container-grid-agenda header,
+    .container-grid-contact header {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -358,7 +368,8 @@ footer p {
     .container-grid-home,
     .container-grid-proj,
     .container-grid-over,
-    .container-grid-agenda {
+    .container-grid-agenda,
+    .container-grid-contact header {
         padding: 2%;
     }
 
@@ -741,5 +752,36 @@ footer p {
 
     .container-grid-agenda main .agendaAlles article {
         padding: 6%;
+    }
+
+    .container-grid-contact main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #6b8041;
+        height: 50vh;
+    }
+
+    .container-grid-contact main div h1 {
+        color: #fefced;
+    }
+
+    .container-grid-contact main div:nth-child(2) section {
+        width: 78%;
+        background-color: #fefced;
+
+    }
+
+    .container-grid-contact main div:nth-child(2) section form {
+        padding: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-grid-contact main div:nth-child(2) section form input {
+        border: none;
+        border-bottom: 2px solid #2d2d2d;
+        margin-bottom: 2%;
+        background-color: #fefced;
     }
 }
