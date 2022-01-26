@@ -114,12 +114,9 @@ function checkIedereen() {
         //alert("yeeyFout");
         document.getElementById("kinderen").style.display = "grid";
         document.getElementById("spanKinderenTwee").style.display = "grid";
-
         document.getElementById("kinderenTwee").style.display = "grid";
-
         document.getElementById("ouder").style.display = "grid";
         document.getElementById("spanOuderEen").style.display = "grid";
-
         document.getElementById("ouderTwee").style.display = "grid";
         document.getElementById("spanOuderTwee").style.display = "grid";
         document.getElementById("spanIedereen").style.display = "grid";
