@@ -7,7 +7,7 @@ body {
 .container-grid-home,
 .container-grid-proj,
 .container-grid-over,
-.container-grid-agendar {
+.container-grid-agenda {
     padding: 4%;
 }
 
@@ -94,6 +94,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p,
 li,
 a,
@@ -108,15 +109,26 @@ h1 {
     font-weight: 900;
 }
 
-.container-grid-proj .actief {
-    background-color: #6b8041;
+.actief {
+    background-color: #d25a27;
+}
+
+.nav-figure {
+    width: 58px;
+    height: 10px;
+    margin-top: -7px;
+    background-color: #d25a27;
+    z-index: -5;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
 }
 
 .container-grid-home header,
 .container-grid-proj header,
 .container-grid-over header,
 .container-grid-agenda header,
-.container-grid-contact header {
+.container-grid-contact header,
+.container-grid-podcast header,
+.container-grid-podcastCu header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -124,7 +136,10 @@ h1 {
 .container-grid-home header div,
 .container-grid-proj header div,
 .container-grid-over header div,
-.container-grid-contact header div {
+.container-grid-contact header div,
+.container-grid-agenda header div,
+.container-grid-podcast header div,
+.container-grid-podcastCu header div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -133,19 +148,26 @@ h1 {
 .container-grid-proj header div img,
 .container-grid-over header div img,
 .container-grid-agenda header div img,
-.container-grid-contact header div img {
-    width: 100%;
+.container-grid-contact header div img,
+.container-grid-podcast header div img,
+.container-grid-podcast header div img,
+.container-grid-podcastCu header div img {
+    width: 54%;
+
 }
 
+.container-grid-home header div a {
+    border-right: 1px solid #2d2d2d;
+}
 
 .container-grid-home header h1 {
     font-size: 75px;
-    color: #6b8041;
+    color: #d25a27;
 }
 
 .container-grid-proj header h1 {
     font-size: 75px;
-    color: #6b8041;
+    color: #d25a27;
 }
 
 .container-grid-over header h1 {
@@ -165,7 +187,9 @@ h1 {
 .container-grid-proj header nav,
 .container-grid-over header nav,
 .container-grid-agenda header nav,
-.container-grid-contact header nav {
+.container-grid-contact header nav,
+.container-grid-podcast header nav,
+.container-grid-podcastCu header nav {
     display: grid;
     align-items: center;
 }
@@ -174,23 +198,27 @@ h1 {
 .container-grid-proj header nav ul,
 .container-grid-over header nav ul,
 .container-grid-agenda header nav ul,
-.container-grid-contact header nav ul {
+.container-grid-contact header nav ul,
+.container-grid-podcast header nav ul,
+.container-grid-podcastCu header nav ul {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid-home header nav ul li,
 .container-grid-proj header nav ul li,
 .container-grid-over header nav ul li,
 .container-grid-agenda header nav ul li,
-.container-grid-contact header nav ul li {
+.container-grid-contact header nav ul li,
+.container-grid-podcast header nav ul li,
+.container-grid-podcastCu header nav ul li {
     display: grid;
     justify-content: center;
     font-weight: 500;
 }
 
-.container-grid-home div:nth-child(1),
-.container-grid-home div:nth-child(2) {
+.container-grid-home main div:nth-child(1),
+.container-grid-home main div:nth-child(2) {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -201,7 +229,9 @@ h1 {
 .container-grid-proj main h1,
 .container-grid-over main h1,
 .container-grid-agenda main h1,
-.container-grid-contact main h1 {
+.container-grid-contact main h1,
+.container-grid-podcast main h1,
+.container-grid-podcastCu main h1 {
     font-size: 6em;
 }
 
@@ -210,12 +240,19 @@ h1 {
 .container-grid-over main h2,
 .container-grid-over aside h2,
 .container-grid-agenda main h2,
-.container-grid-contact main h2 {
+.container-grid-contact main h2,
+.container-grid-podcast main h2,
+.container-grid-podcastCu main h2 {
     font-size: 4em;
 }
 
+.container-grid-contact aside h2 {
+    font-size: 2em;
+}
+
 .container-grid-over p,
-.container-grid-proj p {
+.container-grid-proj p,
+.container-grid-podcastCu p {
     font-size: 20px;
     width: 80%;
     margin: auto;
@@ -223,13 +260,18 @@ h1 {
     line-height: 26px;
 }
 
-.container-grid-home main .knop {
+.container-grid-home .knop,
+.container-grid-proj main .knop {
     margin-top: 2%;
 }
 
-.container-grid-home main .knop a {
+.container-grid-home .knop {
+    display: flex;
+}
+
+.container-grid-home .knop a,
+.container-grid-proj main .knop a {
     border: 2px solid #231f20;
-    border-radius: 30px;
     text-decoration: none;
     color: #231f20;
     padding: 0% 2%;
@@ -240,21 +282,37 @@ h1 {
     width: 300px;
     height: 35px;
     margin-top: -40px;
-    background-color: #6b8041;
+    background-color: #d25a27;
+}
+
+.container-grid-home aside figure,
+.container-grid-podcastCu main figure {
+    width: 150px;
+    height: 17px;
+    margin-top: -20px;
+    background-color: #d25a27;
+    z-index: -5;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeHalf;
+}
+
+.container-grid-home aside article img {
+    width: 100%;
 }
 
 .container-grid-proj main div figure {
-    width: 300px;
-    height: 35px;
-    margin-top: -40px;
-    background-color: #6b8041;
+    width: 50px;
+    height: 12px;
+    margin-top: -10px;
+    background-color: #d25a27;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeVier;
 }
 
 .container-grid-over div figure {
     width: 124px;
     height: 17px;
     margin-top: -24px;
-    background-color: #6b8041;
+    background-color: #d25a27;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeTwee
 }
 
 .container-grid-home main {
@@ -262,6 +320,17 @@ h1 {
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
     height: 81vh;
+}
+
+.container-grid-proj main h3,
+.container-grid-proj main h4,
+.container-grid-contact aside h3,
+.container-grid-contact aside h4 {
+    font-weight: bold;
+}
+
+.container-grid-proj main h3 {
+    padding: 3%;
 }
 
 .container-grid-home main img {
@@ -272,25 +341,44 @@ h1 {
     width: 100%;
 }
 
-.container-grid-proj main h1 {
-    margin-bottom: 10%;
-}
-
-.container-grid-proj main div div div {
+.container-grid-proj main {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    padding-top: 3%;
+
 }
 
-.container-grid-proj main div p {
-    font-size: 58px;
-    margin-left: 5%;
+.workshopKinderen {
+    padding-top: 5%;
+    padding-right: 5%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.container-grid-proj main .alleProjecten {
+.workshopKinderen img {
+    padding-bottom: 5%;
+}
+
+.workshopArchi {
+    padding-top: 5%;
+    padding-left: 5%;
+    border-top: 1px solid black;
+}
+
+.container-grid-proj main .workshopArchi div:nth-child(1) {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 28px;
+    padding-bottom: 5%;
 }
 
+.container-grid-proj main .workshopArchi div:nth-child(1) div {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    grid-template-rows: 1fr;
+}
 
 .container-grid-home main img {
     width: 100%;
@@ -328,7 +416,7 @@ h1 {
 .container-grid-home nav ul li a:hover {
     color: #231f20;
     animation: 1s ease-out effectSchuivenNav;
-    background-color: #6b8041;
+    background-color: #d25a27;
 
 }
 
@@ -344,11 +432,60 @@ footer p {
     padding: 0 !important;
 }
 
+
+
 @media (min-width: 760px) {}
 
 @media (min-width: 1200px) {
     .desktop {
         visibility: visible;
+    }
+
+    footer {
+        padding: 4%;
+        font-weight: bold;
+    }
+
+    footer a {
+        color: white;
+    }
+
+    footer section {
+        width: 60%;
+        margin: auto;
+    }
+
+    .fab {
+        padding: 2%;
+    }
+
+    footer h3 {
+        color: white;
+    }
+
+    footer div {
+        width: 75%;
+        margin: auto;
+    }
+
+    footer div div {
+        padding-bottom: 2%;
+        margin-bottom: 2%;
+        border-bottom: 1px solid white;
+    }
+
+    footer aside {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    footer aside ul {
+        display: grid;
+    }
+
+    footer aside ul li {
+        color: white;
     }
 
     .hamburger-nav {
@@ -359,17 +496,22 @@ footer p {
     .container-grid-proj header,
     .container-grid-over header,
     .container-grid-agenda header,
-    .container-grid-contact header {
+    .container-grid-contact header,
+    .container-grid-podcast header,
+    .container-grid-podcastCu header {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+        border-top: 1px solid #2d2d2d;
+        border-bottom: 1px solid #2d2d2d;
     }
 
     .container-grid-home,
     .container-grid-proj,
     .container-grid-over,
     .container-grid-agenda,
-    .container-grid-contact header {
+    .container-grid-podcast,
+    .container-grid-contact,
+    .container-grid-podcastCu {
         padding: 2%;
     }
 
@@ -401,10 +543,68 @@ footer p {
         grid-template-rows: 1fr;
         grid-template-columns: 2fr 1fr;
         align-content: center;
+        border-bottom: 1px solid black;
     }
+
 
     .container-grid-home main img {
         width: 100%;
+    }
+
+    .container-grid-home aside section:nth-child(1) {
+        border-bottom: 1px solid black;
+    }
+
+    .container-grid-home aside section:nth-child(2) article div:nth-child(1),
+    .container-grid-home aside section:nth-child(2) article div:nth-child(3) {
+        visibility: hidden;
+    }
+
+    .container-grid-home aside .homeOverons h3,
+    .container-grid-proj h3,
+    .container-grid-agenda article h3 {
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
+        text-align: center;
+    }
+
+    #homeWorkshop {
+        display: none;
+    }
+
+    .container-grid-home aside div {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .container-grid-home aside article {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        letter-spacing: 3px;
+        line-height: 23px;
+        grid-gap: 56px;
+    }
+
+    .container-grid-home aside section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .container-grid-home aside article .homeOverons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 56px;
+    }
+
+    .container-grid-home aside article div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-grid-home p {
+        width: 80%;
     }
 
     .container-grid-home header div:nth-child(1),
@@ -442,7 +642,8 @@ footer p {
     }
 
     .container-grid-over main h2,
-    .container-grid-over aside h2 {
+    .container-grid-over aside h2,
+    .container-grid-home h2 {
         font-size: 3em;
     }
 
@@ -468,14 +669,14 @@ footer p {
     .container-grid-home nav ul li a:hover {
         color: #231f20;
         animation: 1s ease-out effectSchuivenNav;
-        background-color: #6b8041;
+        background-color: #d25a27;
 
     }
 
     .container-grid-proj nav ul li a:hover {
         color: #231f20;
         animation: 1s ease-out effectSchuivenNav;
-        background-color: #6b8041;
+        background-color: #d25a27;
     }
 
     .container-grid-over nav ul li a:hover {
@@ -501,12 +702,22 @@ footer p {
         animation: 1s ease-out 0s 1 effectSchuivenLijntjeTwee;
     }
 
-    .container-grid-proj figure {
+    .container-grid-proj main figure {
         animation: 1s ease-out 0s 1 effectSchuivenLijntje;
     }
 
     .actief {
         animation: 1s ease-out effectSchuivenNav;
+    }
+
+    @keyframes effectSchuivenLijntjeHalf {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 150px;
+        }
     }
 
     @keyframes effectSchuivenLijntje {
@@ -519,6 +730,16 @@ footer p {
         }
     }
 
+    @keyframes effectSchuivenLijntjeNav {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 58px;
+        }
+    }
+
     @keyframes effectSchuivenLijntjeTwee {
         0% {
             width: 0;
@@ -526,6 +747,16 @@ footer p {
 
         100% {
             width: 124px;
+        }
+    }
+
+    @keyframes effectSchuivenLijntjeVier {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 50px;
         }
     }
 
@@ -582,26 +813,7 @@ footer p {
         }
     }
 
-    .container-grid-proj main div img {
-        filter: grayscale(100%);
-    }
 
-    .container-grid-proj main div img:hover {
-        animation: 1s ease-out 0s 1 grijzeFoto;
-
-    }
-
-    .container-grid-proj main .alleProjecten {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 11px;
-    }
-
-    .container-grid-proj main h1 {
-        margin-top: 6%;
-        margin-bottom: 0;
-        padding-bottom: 2%;
-    }
 
     .container-grid-over main .images-over {
         display: grid;
@@ -613,9 +825,7 @@ footer p {
         width: 100%;
     }
 
-    .container-grid-proj main .blub {
-        margin-top: 5%;
-    }
+
 
     .container-grid-over main article {
         padding: 4%;
@@ -652,7 +862,8 @@ footer p {
     }
 
     .box-test h3,
-    .container-grid-agenda h3 {
+    .container-grid-agenda h3,
+    .container-grid-contact h3 {
         font-weight: 700;
         margin-bottom: 20px;
     }
@@ -671,7 +882,7 @@ footer p {
 
     .group-knoppen a:nth-child(1) {
         padding: 5%;
-        background-color: #6b8041;
+        background-color: #d25a27;
         border-radius: 5px;
     }
 
@@ -708,14 +919,34 @@ footer p {
     .container-grid-agenda main .agendaAlles {
         display: grid;
         grid-template-columns: 1fr 5fr;
+        border-bottom: 1px solid #2d2d2d;
+    }
+
+    #nietZichtbaar {
+        display: grid;
     }
 
     .sleutelwoordKind {
-        background-color: #6b8041;
+        background-color: #ffba01;
     }
 
-    .sleutelwoordArchi {
-        background-color: #ffba01;
+    .sleutelwoordOuder {
+        background-color: #d25a27;
+    }
+
+    .sleutelwoordIedereen {
+        background-color: #31449c;
+    }
+
+    input[type=checkbox]::before {
+        border: none;
+        color: white;
+        background-color: #31449c;
+    }
+
+    .container-grid-agenda form div {
+        display: flex;
+
     }
 
     .container-grid-agenda .groupAgenda {
@@ -731,18 +962,48 @@ footer p {
         justify-content: end;
     }
 
-    .container-grid-agenda main div:nth-child(2) section {
+    .container-grid-agenda .agendaCopy {
         background-image: url("../images/minigolf1-over.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
     }
 
-    .container-grid-agenda main div:nth-child(3) section {
-        background-image: url("../images/Zomercafe4.jpeg");
+    .container-grid-agenda .agendaSeeU {
+        background-image: url("../images/minigolf1-over.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-grid-agenda .agendaRecycle {
+        background-image: url("../images/archikids2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-grid-agenda .agendaRecycleTwee {
+        background-image: url("../images/archikids.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container-grid-agenda .agendaIedereen {
+        background-image: url("../images/.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #ouder,
+    #kinderen {
+        display: grid;
     }
 
     .container-grid-agenda main .agendaAlles figure {
         display: grid;
         align-items: center;
         justify-content: center;
+        text-align: center;
+
     }
 
     .agendaAlles {
@@ -757,25 +1018,59 @@ footer p {
     .container-grid-contact main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        background-color: #6b8041;
+        background-image: url("../images/banner.png");
         height: 50vh;
+    }
+
+    .container-grid-contact aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-grid-contact aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+    }
+
+    .container-grid-contact aside div h2 {
+        color: #d25a27;
+        font-weight: bold;
+    }
+
+    .container-grid-contact main form {
+        line-height: 84px;
+
     }
 
     .container-grid-contact main div h1 {
         color: #fefced;
     }
 
-    .container-grid-contact main div:nth-child(2) section {
-        width: 78%;
-        background-color: #fefced;
+    .container-grid-contact main div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .container-grid-contact main div:nth-child(2) {
+        display: flex;
+        align-items: end;
+        margin-top: 13%;
+        justify-content: center;
+    }
+
+    .container-grid-contact main div:nth-child(2) section {
+        width: 65%;
+        background-color: #fefced;
     }
 
     .container-grid-contact main div:nth-child(2) section form {
-        padding: 5%;
-        text-align: center;
+        padding: 13%;
         display: flex;
         flex-direction: column;
+        border: 1px solid #2d2d2d;
     }
 
     .container-grid-contact main div:nth-child(2) section form input {
@@ -784,4 +1079,47 @@ footer p {
         margin-bottom: 2%;
         background-color: #fefced;
     }
+
+    .container-grid-podcast main .rijEen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .container-grid-podcast main img {
+        width: 100%;
+    }
+
+    .container-grid-podcast main div img:nth-child(1) {
+        padding-left: 47%;
+    }
+
+    .container-grid-podcast main div img:nth-child(2) {
+        z-index: -5;
+    }
+
+    .container-grid-podcast main .rijEen {
+        padding: 2%;
+        border-bottom: 1px solid #2d2d2d;
+    }
+
+    .container-grid-podcast main .rijEen:nth-child(3) {
+        border-bottom: 0px;
+    }
+
+    .container-grid-podcast main .rijEen div div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        cursor: pointer;
+    }
+
+    .container-grid-podcastCu main {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        align-items: center;
+        justify-items: center;
+        border-left: 1px solid #2d2d2d;
+        margin-top: 50px;
+    }
+
 }

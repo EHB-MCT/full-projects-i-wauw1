@@ -33,3 +33,95 @@ function infoWorkshopsTwee() {
         document.getElementById("bannerTekstTwee").style.overflow = "visible";
     }
 }
+
+function homeCarousel() {
+    if (document.getElementById("homeWorkshop").style.display == "none") {
+        document.getElementById("homeOver").style.display = "none";
+        document.getElementById("homeWorkshop").style.display = "grid";
+    } else {
+        document.getElementById("homeOver").style.display = "grid";
+        document.getElementById("homeWorkshop").style.display = "none";
+    }
+}
+
+function cdOpen() {
+    document.getElementById("hoesje").style.paddingLeft = "0";
+}
+
+function cdToe() {
+    document.getElementById("hoesje").style.paddingLeft = "47%";
+}
+
+function checkKinderen() {
+    if (document.getElementById("kinderCheck").checked) {
+        document.getElementById("ouder").style.display = "none";
+        document.getElementById("spanOuderEen").style.display = "none";
+
+        document.getElementById("ouderTwee").style.display = "none";
+        document.getElementById("spanOuderTwee").style.display = "none";
+
+        document.getElementById("spanIedereen").style.display = "none";
+        document.getElementById("iedereen").style.display = "none";
+    } else {
+        document.getElementById("ouder").style.display = "grid";
+        document.getElementById("spanOuderEen").style.display = "grid";
+
+        document.getElementById("ouderTwee").style.display = "grid";
+        document.getElementById("spanOuderTwee").style.display = "grid";
+
+        document.getElementById("spanIedereen").style.display = "grid";
+        document.getElementById("iedereen").style.display = "grid";
+    }
+}
+
+function checkVolwassenen() {
+    if (document.getElementById("checkVolwassenenId").checked) {
+        // alert("yeey");
+        document.getElementById("kinderen").style.display = "none";
+        document.getElementById("spanKinderenTwee").style.display = "none";
+
+        document.getElementById("kinderenTwee").style.display = "none";
+        document.getElementById("spanIedereen").style.display = "none";
+        document.getElementById("iedereen").style.display = "none";
+    } else {
+        //alert("yeeyFout");
+        document.getElementById("kinderen").style.display = "grid";
+        document.getElementById("spanKinderenTwee").style.display = "grid";
+
+        document.getElementById("kinderenTwee").style.display = "grid";
+        document.getElementById("spanIedereen").style.display = "grid";
+        document.getElementById("iedereen").style.display = "grid";
+    }
+}
+
+function checkIedereen() {
+    if (document.getElementById("iedereenCheck").checked) {
+        // alert("yeey");
+        document.getElementById("kinderen").style.display = "none";
+        document.getElementById("spanKinderenTwee").style.display = "none";
+
+        document.getElementById("kinderenTwee").style.display = "none";
+        document.getElementById("spanIedereen").style.display = "none";
+
+        document.getElementById("ouder").style.display = "none";
+        document.getElementById("spanOuderEen").style.display = "none";
+
+        document.getElementById("ouderTwee").style.display = "none";
+        document.getElementById("spanOuderTwee").style.display = "none";
+
+        document.getElementById("spanIedereen").style.display = "none";
+    } else {
+        //alert("yeeyFout");
+        document.getElementById("kinderen").style.display = "grid";
+        document.getElementById("spanKinderenTwee").style.display = "grid";
+
+        document.getElementById("kinderenTwee").style.display = "grid";
+
+        document.getElementById("ouder").style.display = "grid";
+        document.getElementById("spanOuderEen").style.display = "grid";
+
+        document.getElementById("ouderTwee").style.display = "grid";
+        document.getElementById("spanOuderTwee").style.display = "grid";
+        document.getElementById("spanIedereen").style.display = "grid";
+    }
+}

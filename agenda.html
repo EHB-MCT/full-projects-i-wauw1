@@ -4,6 +4,7 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/046f62b67f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -11,7 +12,7 @@
         <section class="container-grid-agenda">
             <header>
                 <div>
-                    <a href="index.html"><img src="images/logo.png"></a>
+                    <a href="index.html"><img src="images/logo_oranje.png"></a>
                 </div>
                 <nav>
                     <ul>
@@ -19,7 +20,11 @@
                             <a href="projecten.html"> Projecten</a>
                         </li>
                         <li>
-                            <a class="actief" href="agenda.html"> Agenda</a>
+                            <a href="agenda.html"> Agenda</a>
+                            <figure class="nav-figure"></figure>
+                        </li>
+                        <li>
+                            <a href="podcast.html"> Podcast</a>
                         </li>
                         <li>
                             <a href="over.html"> Over ons</a>
@@ -33,95 +38,155 @@
             <main>
                 <div>
                     <form action="/action_page.php">
-                        <input type="checkbox" id="kinderCheck" name="kinderCheck" value="kinderen">
-                        <label for="kinderCheck">jongeren/ouders</label><br>
-                        <input type="checkbox" id="archiCheck" name="archiCheck" value="architectuur">
-                        <label for="archiCheck"> architectuur</label><br>
+                        <div>
+                            <label for="kinderCheck">Kinderen</label><br>
+                            <input onclick="checkKinderen();" type="checkbox" class="filterKinderen" id="kinderCheck"
+                                name="kinderCheck" value="kinderen">
+                        </div>
+                        <div>
+                            <label for="volwassenenCheck"> Volwassenen</label><br>
+                            <input onclick="checkVolwassenen();" type="checkbox" class="filterVolwassenen"
+                                id="checkVolwassenenId" name="archiCheck" value="volwassenen">
+                        </div>
+                        <div>
+                            <label for="iedereenCheck"> Iedereen</label><br>
+                            <input onclick="checkIedereen();" type="checkbox" class="filterIedereen" id="iedereenCheck"
+                                name="iedereenCheck" value="iedereen">
+                        </div>
                     </form>
                 </div>
-                <div class="agendaAlles">
-                    <figure class="sleutelwoordKind">
-                        <h3>08:00</h3>
+                <div id="ouder" class="agendaAlles">
+                    <figure class="sleutelwoordOuder">
+                        <h3>08:00<br>16-18/02/22</h3>
                     </figure>
                     <div class="groupAgenda" id="bannerTekst">
-                        <section onclick="infoWorkshops();">
-                            <p><b>drop</b></p>
+                        <section class="agendaCopy">
                         </section>
                         <article>
-                            <h3>Iets met Architectuur</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                <br>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                <br>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-
+                            <h3>Copy-paste-participation</h3>
+                            <p>Copy-paste-participation (work workshop on invitation)
                             </p>
                         </article>
                     </div>
                 </div>
-                <span></span>
-                <div class="agendaAlles">
-                    <figure class="sleutelwoordArchi">
-                        <h3>08:00</h3>
+
+                <span id="spanOuderEen">
+                </span>
+                <div id="ouderTwee" class="agendaAlles">
+                    <figure class="sleutelwoordOuder">
+                        <h3>08:00<br>16-18/02/22</h3>
                     </figure>
-                    <div class="groupAgenda" id="bannerTekstTwee">
-                        <section onclick="infoWorkshopsTwee();">
-                            <p><b>drop</b></p>
+                    <div class="groupAgenda" id="bannerTekst">
+                        <section class="agendaSeeU">
                         </section>
                         <article>
-                            <h3>Iets met Architectuur</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                <br>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                <br>
-                                <br>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit, sed diam nonummy nibh
-                                euismod tincidunt ut.
+                            <h3>SEE YOU</h3>
+                            <p>Planting room (meer info volgt)
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <span id="spanOuderTwee"></span>
+                <div id="kinderen" class="agendaAlles">
+                    <figure class="sleutelwoordKind">
+                        <h3>08:00<br>16-18/02/22</h3>
+                    </figure>
+                    <div class="groupAgenda" id="bannerTekst">
+                        <section class="agendaRecycle">
+                        </section>
+                        <article>
+                            <h3>archikids RECYCLART</h3>
+                            <p>archikids RECYCLART , 7>12jaar
+                                inschrijven:
+                                <br><br>
+                                kobe@recyclart.be <br>
+                                http://www.recyclart.be/nl/agenda/archikids-3
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <span id="spanKinderenTwee"></span>
+                <div id="kinderenTwee" class="agendaAlles">
+                    <figure class="sleutelwoordKind">
+                        <h3>08:00<br>16-18/02/22</h3>
+                    </figure>
+                    <div class="groupAgenda" id="bannerTekst">
+                        <section class="agendaRecycleTwee">
+                        </section>
+                        <article>
+                            <h3>archikids RECYCLART</h3>
+                            <p>archikids RECYCLART , 7>12jaar
+                                inschrijven:
+                                <br><br>
+                                kobe@recyclart.be http://www.recyclart.be/nl/agenda/archikids-3
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                <span id="spanIedereen"></span>
+                <div id="iedereen" class="agendaAlles">
+                    <figure class="sleutelwoordIedereen">
+                        <h3>08:00<br>16-18/02/22</h3>
+                    </figure>
+                    <div class="groupAgenda" id="bannerTekst">
+                        <section class="agendaIedereen">
+                        </section>
+                        <article>
+                            <h3>TEACH UP</h3>
+                            <p>https://teachup2030.be/
                             </p>
                         </article>
                     </div>
                 </div>
             </main>
+
         </section>
+        <footer>
+            <div>
+                <h3>VERGEET ONS NIET TE VOLGEN OP HET SOCIAAL MEDIA</h3>
+                <section>
+                    <div>
+                        <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"> <i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="#"> <i class="fab fa-spotify fa-2x"></i></a>
+                        <a href="#"> <i class="fab fa-youtube fa-2x"></i></a>
+                    </div>
+                </section>
+                <aside>
+                    <img src="images/logo_oranje.png">
+                    <ul>
+                        <li>
+                            info@wauw.test.be
+                        </li>
+                        <li>
+                            +123 123 12 32 12
+                        </li>
+                        <li>
+                            EEN PLEIN,HUIS NR
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            HOME
+                        </li>
+                        <li>
+                            WORKSHOPS
+                        </li>
+                        <li>
+                            AGENDA
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            OVER ONS
+                        </li>
+                        <li>
+                            CONTACT
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </footer>
 </body>
