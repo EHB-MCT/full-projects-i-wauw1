@@ -122,6 +122,14 @@ h1 {
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
 }
 
+.nav-figureUitleg {
+    width: 14px;
+    height: 5px;
+    background-color: #d25a27;
+    z-index: -5;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeNavUitleg;
+}
+
 .container-grid-home header,
 .container-grid-proj header,
 .container-grid-over header,
@@ -369,19 +377,75 @@ h1 {
 
 .container-grid-proj main .workshopArchi div:nth-child(1) {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 28px;
-    padding-bottom: 5%;
 }
 
-.container-grid-proj main .workshopArchi div:nth-child(1) div {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    grid-template-rows: 1fr;
+.minigolf,
+.zomercafe,
+.betonstad,
+.droomstad {
+
+    display: grid;
+    align-content: end;
+    justify-content: end;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.container-grid-home main img {
+.workshopArchi h2 {
+    font-size: 6em !important;
+    font-weight: bold;
+    color: white;
+}
+
+.workshopArchi .groupWorks {
+    height: 75vh;
+}
+
+
+.minigolf {
+    background-image: url("../images/minigolf1.jpeg");
+}
+
+.zomercafe {
+    background-image: url("../images/Zomercafe4.jpeg");
+}
+
+.container-grid-proj main .betonstad {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    background-image: url("../images/Betonstad.jpeg");
+}
+
+.container-grid-proj main .droomstad {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-image: url("../images/Droomhuizen4.jpeg");
+}
+
+
+.container .container-grid-home main img {
     width: 100%;
+}
+
+
+
+.container-grid-home .uitlegWauw {
+    border-bottom: 1px solid #2d2d2d;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.uitlegWauwDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 75%;
+    margin: auto;
+}
+
+.uitlegWauwDiv div {
+    display: grid;
+    justify-content: center;
 }
 
 .container-grid-home header div:nth-child(1) {
@@ -600,7 +664,7 @@ footer p {
     .container-grid-home aside article div {
         display: grid;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .container-grid-home p {
@@ -609,7 +673,11 @@ footer p {
 
     .container-grid-home header div:nth-child(1),
     .container-grid-proj header div:nth-child(1),
-    .container-grid-over header div:nth-child(1) {
+    .container-grid-over header div:nth-child(1),
+    .container-grid-agenda header div:nth-child(1),
+    .container-grid-contact header div:nth-child(1),
+    .container-grid-podcast header div:nth-child(1),
+    .container-grid-podcastCu header div:nth-child(1) {
         display: grid;
         padding-left: 6%;
         align-items: center;
@@ -737,6 +805,16 @@ footer p {
 
         100% {
             width: 58px;
+        }
+    }
+
+    @keyframes effectSchuivenLijntjeNavUitleg {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 14px;
         }
     }
 
@@ -910,6 +988,7 @@ footer p {
         background-color: #43529b;
     }
 
+
     .container-grid-agenda main {
         display: grid;
         grid-template-columns: 1fr 6fr;
@@ -922,8 +1001,14 @@ footer p {
         border-bottom: 1px solid #2d2d2d;
     }
 
+
+
     #nietZichtbaar {
         display: grid;
+    }
+
+    #iedereen {
+        border-bottom: 0px;
     }
 
     .sleutelwoordKind {
@@ -946,7 +1031,6 @@ footer p {
 
     .container-grid-agenda form div {
         display: flex;
-
     }
 
     .container-grid-agenda .groupAgenda {
@@ -988,7 +1072,7 @@ footer p {
     }
 
     .container-grid-agenda .agendaIedereen {
-        background-image: url("../images/.jpg");
+        background-image: url("../images/teachup.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
