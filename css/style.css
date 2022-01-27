@@ -889,9 +889,7 @@ footer p {
 
     }
 
-    .container-grid-proj main figure {
-        animation: 1s ease-out 0s 1 effectSchuivenLijntje;
-    }
+
 
     .actief {
         animation: 1s ease-out effectSchuivenNav;
