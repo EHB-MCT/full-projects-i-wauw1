@@ -15,10 +15,10 @@
                 <div>
                     <a href="index.html"><img src="images/logo_oranje.png"></a>
                 </div>
-                <nav>
+                <nav class="desktop">
                     <ul>
                         <li>
-                            <a href="projecten.html">Workshops</a>
+                            <a href="projecten.html"> Workshops</a>
                         </li>
                         <li>
                             <a href="agenda.html"> Agenda</a>
@@ -35,9 +35,37 @@
                         </li>
                     </ul>
                 </nav>
+                <article id="hamburger" onclick="toonLijst();" class="hamburger-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </article>
+                <article onclick="sluitLijst();" id="x-nav-id" class="x-nav">
+                    <h2>X</h2>
+                </article>
             </header>
+            <aside id="lijstHamburger" class="hamburger-check">
+                <ul>
+                    <li>
+                        <a href="projecten.html"> Projecten</a>
+                        <figure></figure>
+                    </li>
+                    <li>
+                        <a href="agenda.html"> Agenda</a>
+                    </li>
+                    <li>
+                        <a href="podcast.html"> Podcast</a>
+                    </li>
+                    <li>
+                        <a href="over.html"> Over ons</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"> Contact</a>
+                    </li>
+                </ul>
+            </aside>
             <main>
-                <div>
+                <div class="formulier">
                     <form action="/action_page.php">
                         <div>
                             <label for="kinderCheck">Kinderen</label><br>
@@ -58,7 +86,7 @@
                 </div>
                 <div id="ouder" class="agendaAlles">
                     <figure class="sleutelwoordOuder">
-                        <h3>08:00<br>16-18/02/22</h3>
+                        <h3>08:00<br><br>16-18/02/22</h3>
                     </figure>
                     <div class="groupAgenda" id="bannerTekst">
                         <section class="agendaCopy">
@@ -89,7 +117,7 @@
                 <span id="spanOuderTwee"></span>
                 <div id="kinderen" class="agendaAlles">
                     <figure class="sleutelwoordKind">
-                        <h3>14u-17u<br>09/03/22</h3>
+                        <h3>14u-17u<br><br>09/03/22</h3>
                     </figure>
                     <div class="groupAgenda" id="bannerTekst">
                         <section class="agendaRecycle">
@@ -100,7 +128,6 @@
                                 inschrijven:
                                 <br><br>
                                 kobe@recyclart.be <br>
-                                http://www.recyclart.be/nl/agenda/archikids-3
                             </p>
                         </article>
                     </div>
@@ -118,7 +145,7 @@
                             <p>archikids RECYCLART , 7>12jaar
                                 inschrijven:
                                 <br><br>
-                                kobe@recyclart.be http://www.recyclart.be/nl/agenda/archikids-3
+                                kobe@recyclart.be <br>
                             </p>
                         </article>
                     </div>
@@ -146,44 +173,42 @@
                 <h3>VERGEET ONS NIET TE VOLGEN OP HET SOCIAAL MEDIA</h3>
                 <section>
                     <div>
-                        <a href="#"> <i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#"> <i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="#"> <i class="fab fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://nl-nl.facebook.com/WAUWworkshops"> <i class="fab fa-facebook fa-2x"></i></a>
                         <a href="#"> <i class="fab fa-spotify fa-2x"></i></a>
-                        <a href="#"> <i class="fab fa-youtube fa-2x"></i></a>
                     </div>
                 </section>
                 <aside>
                     <img src="images/logo_oranje.png">
                     <ul>
                         <li>
-                            info@wauw.test.be
+                            <a href="contact.html"> info@wauw.test.be</a>
                         </li>
                         <li>
                             +123 123 12 32 12
                         </li>
                         <li>
-                            EEN PLEIN,HUIS NR
+                            <a
+                                href="https://www.google.com/maps/dir/50.798195,4.2884908/google+maps+erasmus+hogeschool/@50.8203106,4.2678272,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c3c40f19faf0f9:0x4ef5b683135ecb1e!2m2!1d4.322808!2d50.842239">
+                                EEN PLEIN,HUIS NR</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            HOME
+                            <a href="index.html"> HOME </a></li>
+                        <li>
+                            <a href="projecten.html"> WORKSHOPS</a>
                         </li>
                         <li>
-                            WORKSHOPS
-                        </li>
-                        <li>
-                            AGENDA
+                            <a href="agenda.html"> AGENDA</a>
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            OVER ONS
+                            <a href="over.html"> OVER ONS</a>
                         </li>
                         <li>
-                            CONTACT
+                            <a href="contact.html"> CONTACT</a>
                         </li>
                     </ul>
                 </aside>
