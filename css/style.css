@@ -123,7 +123,7 @@ h1 {
 }
 
 .nav-figureUitleg {
-    width: 14px;
+    width: 25px;
     height: 5px;
     background-color: #d25a27;
     z-index: -5;
@@ -281,7 +281,6 @@ h1 {
 .container-grid-proj main .knop a {
     border: 2px solid #231f20;
     text-decoration: none;
-    color: #231f20;
     padding: 0% 2%;
     font-size: 19px;
 }
@@ -308,9 +307,9 @@ h1 {
 }
 
 .container-grid-proj main div figure {
-    width: 50px;
-    height: 12px;
-    margin-top: -10px;
+    width: 19px;
+    height: 5px;
+    margin-top: -3px;
     background-color: #d25a27;
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeVier;
 }
@@ -321,6 +320,11 @@ h1 {
     margin-top: -24px;
     background-color: #d25a27;
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeTwee
+}
+
+.container-grid-home article b {
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .container-grid-home main {
@@ -365,6 +369,7 @@ h1 {
     border-right: 1px solid black;
 }
 
+
 .workshopKinderen img {
     padding-bottom: 5%;
 }
@@ -383,7 +388,8 @@ h1 {
 .minigolf,
 .zomercafe,
 .betonstad,
-.droomstad {
+.droomstad,
+.bewegendeStad {
 
     display: grid;
     align-content: end;
@@ -392,16 +398,27 @@ h1 {
     background-repeat: no-repeat;
 }
 
-.workshopArchi h2 {
+.workshopArchi h2,
+.bewegendeStad h2 {
     font-size: 6em !important;
     font-weight: bold;
     color: white;
 }
 
-.workshopArchi .groupWorks {
+.workshopKinderen div:nth-child(2),
+.workshopKinderen div:nth-child(3),
+.workshopKinderen div:nth-child(4) {
+    margin-top: 4%;
+}
+
+.workshopArchi .groupWorks,
+.bewegendeStad {
     height: 75vh;
 }
 
+.bewegendeStad {
+    background-image: url("../images/Bewegendestad1.jpeg")
+}
 
 .minigolf {
     background-image: url("../images/minigolf1.jpeg");
@@ -432,8 +449,8 @@ h1 {
 
 .container-grid-home .uitlegWauw {
     border-bottom: 1px solid #2d2d2d;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .uitlegWauwDiv {
@@ -624,6 +641,10 @@ footer p {
         visibility: hidden;
     }
 
+    .container-grid-home .homeOverons div aside {
+        margin-bottom: 38px;
+    }
+
     .container-grid-home aside .homeOverons h3,
     .container-grid-proj h3,
     .container-grid-agenda article h3 {
@@ -639,7 +660,18 @@ footer p {
     .container-grid-home aside div {
         display: grid;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+
+    .container-grid-home aside .homeOverons h2 {
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    .container-grid-home aside div h2 {
+        margin-top: 5%;
+        margin-bottom: 1%;
     }
 
     .container-grid-home aside article {
@@ -664,7 +696,13 @@ footer p {
     .container-grid-home aside article div {
         display: grid;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+
+    .container-grid-home div h3,
+    .container-grid-agenda h3 {
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 
     .container-grid-home p {
@@ -732,6 +770,11 @@ footer p {
 
     .container-grid-home main .knop a {
         font-size: 24px;
+    }
+
+    .knop a:hover {
+        color: white;
+        background-color: #231f20;
     }
 
     .container-grid-home nav ul li a:hover {
@@ -1206,4 +1249,8 @@ footer p {
         margin-top: 50px;
     }
 
+    .container-grid-contact aside div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
