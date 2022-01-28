@@ -1347,6 +1347,18 @@ footer p {
         margin-top: 50px;
     }
 
+    .container-grid-podcastCu h2 {
+        padding-top: 3%;
+    }
+
+    .podcastVid {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+
     .container-grid-contact aside div {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
