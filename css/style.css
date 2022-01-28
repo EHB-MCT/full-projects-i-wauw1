@@ -482,7 +482,7 @@ h1 {
 
 .uitlegWauwDiv {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 75%;
     margin: auto;
 }
@@ -561,6 +561,10 @@ footer p {
 
     footer a {
         color: white;
+    }
+
+    footer a:hover {
+        color: #d25a27;
     }
 
     footer section {
@@ -1062,7 +1066,8 @@ footer p {
         font-weight: 700;
         margin-top: 20px;
         margin-bottom: 20px;
-
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 
     .container-grid-agenda figure h3 {
