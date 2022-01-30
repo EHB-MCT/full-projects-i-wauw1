@@ -48,8 +48,24 @@ function cdOpen() {
     document.getElementById("hoesje").style.paddingLeft = "0";
 }
 
+function cdOpenTuto() {
+    document.getElementById("hoesjeTuto").style.paddingLeft = "0";
+}
+
 function cdToe() {
     document.getElementById("hoesje").style.paddingLeft = "47%";
+}
+
+function cdToeTuto() {
+    document.getElementById("hoesjeTuto").style.paddingLeft = "47%";
+}
+
+function log() {
+    var naamEen = document.getElementById("gebNaam").value;
+    var wachtwoord = document.getElementById("ww").value;
+    if (naamEen == "ilhan" && wachtwoord == "anticheat123" || naamEen == "Ilhan" && wachtwoord == "vrijdag") {
+        document.getElementById("loginText").style.display = "none";
+    }
 }
 
 function checkKinderen() {

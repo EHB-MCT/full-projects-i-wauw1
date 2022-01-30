@@ -6,6 +6,8 @@ body {
 
 .container-grid-home,
 .container-grid-proj,
+.container-grid-podcast,
+.container-grid-podcastCu,
 .container-grid-over,
 .container-grid-agenda {
     padding: 4%;
@@ -26,6 +28,7 @@ body {
 
 .hamburger-nav {
     display: grid;
+    align-items: center;
     justify-content: end;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -46,7 +49,9 @@ body {
     animation: 1s ease-out hamburgerNav;
 }
 
-
+.carousel {
+    display: none;
+}
 
 @keyframes hamburgerNav {
     0% {
@@ -157,6 +162,11 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+header {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
 .container-grid-home header div,
 .container-grid-proj header div,
 .container-grid-over header div,
@@ -165,7 +175,7 @@ h1 {
 .container-grid-podcast header div,
 .container-grid-podcastCu header div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .container-grid-home header div img,
@@ -176,8 +186,7 @@ h1 {
 .container-grid-podcast header div img,
 .container-grid-podcast header div img,
 .container-grid-podcastCu header div img {
-    width: 54%;
-
+    width: 70%;
 }
 
 .container-grid-home header div a,
@@ -258,7 +267,6 @@ h1 {
     font-size: 6em;
 }
 
-.container-grid-home main h2,
 .container-grid-proj main h2,
 .container-grid-over main h2,
 .container-grid-over aside h2,
@@ -273,14 +281,28 @@ h1 {
     font-size: 2em;
 }
 
+.container-grid-home main h1 {
+    font-size: 7em;
+}
+
+.container-grid-home main h2 {
+    font-size: 5em;
+}
+
+.container-grid-home aside h2 {
+    font-size: 3em;
+}
+
 .container-grid-over p,
 .container-grid-proj p,
-.container-grid-podcastCu p {
+.container-grid-podcastCu p,
+.container-grid-home p {
     font-size: 20px;
     width: 80%;
     margin: auto;
     padding: 3%;
     line-height: 26px;
+    letter-spacing: 3px;
 }
 
 .container-grid-home .knop,
@@ -288,16 +310,23 @@ h1 {
     margin-top: 2%;
 }
 
+.knop {
+    font-size: 23px;
+}
+
+.container-grid-podcastCu .knop a {
+    padding: 5%;
+}
+
 .container-grid-home .knop {
     display: flex;
 }
 
-.container-grid-home .knop a,
-.container-grid-proj main .knop a {
+.knop a {
     border: 2px solid #231f20;
     text-decoration: none;
     padding: 0% 2%;
-    font-size: 19px;
+    font-size: 24px;
 }
 
 .container-grid-home main div figure {
@@ -358,7 +387,7 @@ h1 {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
-    height: 81vh;
+    height: 51vh;
 }
 
 .container-grid-proj main h3,
@@ -510,12 +539,9 @@ h1 {
 }
 
 .container-grid-home main h1 {
-    font-size: 7em;
+    font-size: 4em;
 }
 
-.container-grid-home main h2 {
-    font-size: 5em;
-}
 
 .container-grid-home main .knop a {
     font-size: 24px;
@@ -540,13 +566,277 @@ footer p {
     padding: 0 !important;
 }
 
+.container-grid-proj main h1,
+.container-grid-over main h1,
+.container-grid-agenda main h1,
+.container-grid-contact main h1,
+.container-grid-podcast main h1,
+.container-grid-podcastCu main h1 {
+    font-size: 4em;
+}
+
+i {
+    display: none;
+}
 
 
-@media (min-width: 760px) {}
+.container-grid-over .bannerBijde {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    display: grid;
+    align-items: center;
+    font-size: 6em;
+    font-weight: bold;
+    background-image: url("../images/WAUW_blue.jpg");
+    color: white;
+    padding: 5%;
+}
 
-@media (min-width: 1200px) {
+.container-grid-over .bannerBijde h2 {
+    color: white;
+}
+
+.titelWauw {
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.container-grid-podcast main div img:nth-child(1) {
+    padding-left: 67%;
+}
+
+.container-grid-podcast main .rijEen div div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    cursor: pointer;
+}
+
+.container-grid-podcast main div img:nth-child(2) {
+    z-index: -5;
+}
+
+.container-grid-home aside .homeOverons h3,
+.container-grid-proj h3,
+.container-grid-agenda article h3 {
+    border-top: 2px solid #2d2d2d;
+    border-bottom: 2px solid #2d2d2d;
+    text-align: center;
+}
+
+.container-grid-podcast h3 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 2em;
+}
+
+.container-grid-podcast .rijEen div {
+    margin-top: 5%;
+}
+
+footer a,
+footer li {
+    color: white;
+    margin-top: 50px;
+}
+
+footer section {
+    width: 60%;
+    margin: auto;
+}
+
+video {
+    width: 902px;
+}
+
+.box-test {
+    animation: fade-in-overlay .2s ease-in-out forwards;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #231f209c;
+}
+
+.box-test .text-box {
+    animation: 1s ease-out 0s 1 tekstCookie;
+    position: absolute;
+    background-color: white;
+    max-width: 45%;
+    top: 40%;
+    border-radius: 6px;
+    margin: auto;
+    padding: 22px;
+    left: 25%;
+}
+
+.box-test h3,
+.container-grid-agenda h3,
+.container-grid-contact h3 {
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+label,
+.text-box input {
+    font-size: 40px;
+    width: 93%;
+
+}
+
+.text-box form {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 45px;
+}
+
+.container-grid-podcastCu h2 {
+    padding-top: 3%;
+}
+
+.container-grid-agenda .groupAgenda section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 17vh;
+}
+
+.container-grid-agenda .agendaRecycle {
+    background-image: url(../images/archikids2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-grid-agenda .agendaCopy {
+    background-image: url("../images/minigolf1-over.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container-grid-agenda .agendaSeeU {
+    background-image: url("../images/minigolf1-over.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-grid-agenda .agendaRecycle {
+    background-image: url("../images/archikids2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-grid-agenda .agendaRecycleTwee {
+    background-image: url("../images/archikids.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-grid-agenda .agendaIedereen {
+    background-image: url("../images/teachup.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sleutelwoordKind {
+    background-color: #ffba01;
+}
+
+.sleutelwoordOuder {
+    background-color: #d25a27;
+}
+
+.sleutelwoordIedereen {
+    background-color: #31449c;
+}
+
+input[type=checkbox]::before {
+    border: none;
+    color: white;
+    background-color: #31449c;
+}
+
+.container-grid-agenda main .agendaAlles {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.container-grid-home aside section div {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container-grid-home .homeOverons div {
+    margin-top: 2%;
+}
+
+.uitlegWauw {
+    display: none;
+}
+
+.container-grid-podcast main .rijEen {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+}
+
+.container-grid-podcast main img {
+    width: 60%;
+}
+
+@media (min-width: 768px) {
+    .uitlegWauw {
+        display: grid;
+    }
+
     .desktop {
         visibility: visible;
+    }
+
+    header {
+        border-top: 0px solid black;
+        border-bottom: 0px solid black;
+    }
+
+    video {
+        width: 1280px;
+    }
+
+    .knop a {
+        font-size: 19px;
+    }
+
+    .container-grid-home header div img,
+    .container-grid-proj header div img,
+    .container-grid-over header div img,
+    .container-grid-agenda header div img,
+    .container-grid-contact header div img,
+    .container-grid-podcast header div img,
+    .container-grid-podcast header div img,
+    .container-grid-podcastCu header div img {
+        width: 54%;
+    }
+
+    .container-grid-home aside h2 {
+        font-size: 3em;
+    }
+
+    .container-grid-home header div,
+    .container-grid-proj header div,
+    .container-grid-over header div,
+    .container-grid-contact header div,
+    .container-grid-agenda header div,
+    .container-grid-podcast header div,
+    .container-grid-podcastCu header div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     p {
@@ -559,17 +849,11 @@ footer p {
         font-weight: bold;
     }
 
-    footer a {
-        color: white;
-    }
-
-    footer a:hover {
-        color: #d25a27;
-    }
-
-    footer section {
-        width: 60%;
-        margin: auto;
+    .container-grid-over p,
+    .container-grid-proj p,
+    .container-grid-podcastCu p,
+    .container-grid-home p {
+        font-size: 16px;
     }
 
     .fab {
@@ -641,23 +925,7 @@ footer p {
     }
 
 
-    .container-grid-over .bannerBijde {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 40vh;
-        display: grid;
-        align-items: center;
-        font-size: 6em;
-        font-weight: bold;
-        background-image: url("../images/WAUW_blue.jpg");
-        color: white;
 
-        padding: 5%;
-    }
-
-    .container-grid-over .bannerBijde h2 {
-        color: white;
-    }
 
     .container-grid-over header aside {
         display: grid;
@@ -682,6 +950,7 @@ footer p {
         grid-template-columns: 2fr 1fr;
         align-content: center;
         border-bottom: 1px solid black;
+        height: 90vh;
     }
 
 
@@ -726,10 +995,6 @@ footer p {
         margin-bottom: 3%;
     }
 
-    .container-grid-home aside .homeOverons h2 {
-        margin-top: 5%;
-        margin-bottom: 3%;
-    }
 
     .container-grid-home aside div h2 {
         margin-top: 5%;
@@ -751,7 +1016,7 @@ footer p {
 
     .container-grid-home aside article .homeOverons {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-gap: 56px;
     }
 
@@ -797,16 +1062,18 @@ footer p {
     }
 
     .container-grid-home main div:nth-child(2) {
-        margin-right: 20%;
+        margin-right: 51%;
         z-index: -5;
     }
+
+
 
     .container-grid-home div img {
         width: auto;
     }
 
     .container-grid-home main h1 {
-        font-size: 11em;
+        font-size: 4em;
     }
 
     .container-grid-over main h1 {
@@ -814,7 +1081,7 @@ footer p {
     }
 
     .container-grid-home main h2 {
-        font-size: 9em;
+        font-size: 3em;
     }
 
     .container-grid-over main h2,
@@ -1068,6 +1335,7 @@ footer p {
         margin-bottom: 20px;
         padding-top: 3%;
         padding-bottom: 3%;
+        font-size: 20px;
     }
 
     .container-grid-agenda figure h3 {
@@ -1079,6 +1347,17 @@ footer p {
     .box-test .text-box p {
         margin-bottom: 15px;
         line-height: 22px;
+    }
+
+    label,
+    .text-box input {
+        font-size: 20px;
+        width: 93%;
+
+    }
+
+    .text-box form {
+        grid-gap: 10px;
     }
 
     .group-knoppen {
@@ -1141,23 +1420,7 @@ footer p {
         border-bottom: 0px;
     }
 
-    .sleutelwoordKind {
-        background-color: #ffba01;
-    }
 
-    .sleutelwoordOuder {
-        background-color: #d25a27;
-    }
-
-    .sleutelwoordIedereen {
-        background-color: #31449c;
-    }
-
-    input[type=checkbox]::before {
-        border: none;
-        color: white;
-        background-color: #31449c;
-    }
 
     .container-grid-agenda form div {
         display: flex;
@@ -1181,36 +1444,7 @@ footer p {
         justify-content: end;
     }
 
-    .container-grid-agenda .agendaCopy {
-        background-image: url("../images/minigolf1-over.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
 
-    }
-
-    .container-grid-agenda .agendaSeeU {
-        background-image: url("../images/minigolf1-over.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .container-grid-agenda .agendaRecycle {
-        background-image: url("../images/archikids2.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .container-grid-agenda .agendaRecycleTwee {
-        background-image: url("../images/archikids.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .container-grid-agenda .agendaIedereen {
-        background-image: url("../images/teachup.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
     #ouder,
     #kinderen {
@@ -1312,7 +1546,7 @@ footer p {
 
     .container-grid-podcast main .rijEen {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 50px;
     }
 
@@ -1376,4 +1610,54 @@ footer p {
         align-items: center;
     }
 
+    .text-box form {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    footer a:hover {
+        color: #d25a27;
+    }
+
+    .container-grid-agenda .groupAgenda section {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: auto;
+    }
+
+    video {
+        width: 783px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 1200px) {
+    .container-grid-home main h1 {
+        font-size: 11em;
+    }
+
+    .container-grid-home main div:nth-child(2) {
+        margin-right: 20%;
+        z-index: -5;
+    }
+
+    .container-grid-home aside article .homeOverons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 56px;
+    }
+
+    .container-grid-podcast main .rijEen {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
 }
