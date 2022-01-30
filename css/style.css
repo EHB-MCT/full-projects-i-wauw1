@@ -16,6 +16,9 @@ body {
 .hamburger-check {
     height: 0;
     overflow: hidden;
+    margin-bottom: 12%;
+    height: 0;
+    border-bottom: 1px solid black;
 }
 
 .hamburger-check li {
@@ -23,6 +26,7 @@ body {
 }
 
 .desktop {
+    display: none;
     visibility: hidden;
 }
 
@@ -387,7 +391,7 @@ header {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
-    height: 51vh;
+    height: 64vh;
 }
 
 .container-grid-proj main h3,
@@ -411,7 +415,7 @@ header {
 
 .container-grid-proj main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     width: 80%;
     margin: auto;
     padding-top: 3%;
@@ -579,6 +583,10 @@ i {
     display: none;
 }
 
+form div {
+    display: flex;
+}
+
 
 .container-grid-over .bannerBijde {
     background-size: cover;
@@ -673,13 +681,18 @@ video {
     left: 25%;
 }
 
+
+
 .box-test h3,
 .container-grid-agenda h3,
 .container-grid-contact h3 {
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    text-align: center;
     padding-top: 3%;
     padding-bottom: 3%;
 }
@@ -796,8 +809,10 @@ input[type=checkbox]::before {
         display: grid;
     }
 
+
     .desktop {
-        visibility: visible;
+        display: none;
+        visibility: hidden;
     }
 
     header {
@@ -905,9 +920,7 @@ input[type=checkbox]::before {
         color: white;
     }
 
-    .hamburger-nav {
-        display: none;
-    }
+
 
     .container-grid-home header,
     .container-grid-proj header,
@@ -917,7 +930,6 @@ input[type=checkbox]::before {
     .container-grid-podcast header,
     .container-grid-podcastCu header {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         border-top: 1px solid #2d2d2d;
         border-bottom: 1px solid #2d2d2d;
     }
@@ -1662,6 +1674,26 @@ input[type=checkbox]::before {
         font-size: 11em;
     }
 
+    .desktop {
+        visibility: visible;
+        display: grid;
+    }
+
+    .hamburger-nav {
+        display: none;
+    }
+
+    .container-grid-home header,
+    .container-grid-proj header,
+    .container-grid-over header,
+    .container-grid-agenda header,
+    .container-grid-contact header,
+    .container-grid-podcast header,
+    .container-grid-podcastCu header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     header {
         border-top: 0px solid black;
         border-bottom: 0px solid black;
@@ -1674,7 +1706,7 @@ input[type=checkbox]::before {
         margin-top: -7px;
         background-color: #d25a27;
         z-index: -5;
-        /animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
+        animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
     }
 
     .container-grid-home main div:nth-child(2) {
@@ -1705,5 +1737,20 @@ input[type=checkbox]::before {
         border-bottom: 1px solid black;
         height: 90vh;
         overflow: hidden;
+    }
+
+    .box-test h3,
+    .container-grid-agenda h3,
+    .container-grid-contact h3 {
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .container-grid-proj main {
+        grid-template-columns: 1fr 1fr;
     }
 }
