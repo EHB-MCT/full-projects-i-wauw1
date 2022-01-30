@@ -804,6 +804,16 @@ input[type=checkbox]::before {
     width: 60%;
 }
 
+video {
+    width: 500px;
+}
+
+label,
+.text-box input {
+    font-size: 16px;
+    width: 87%;
+}
+
 @media (min-width: 768px) {
     .uitlegWauw {
         display: grid;
@@ -1375,12 +1385,7 @@ input[type=checkbox]::before {
         line-height: 22px;
     }
 
-    label,
-    .text-box input {
-        font-size: 20px;
-        width: 93%;
 
-    }
 
     .text-box form {
         grid-gap: 10px;
@@ -1658,6 +1663,13 @@ input[type=checkbox]::before {
 
     video {
         width: 783px;
+    }
+
+    label,
+    .text-box input {
+        font-size: 20px;
+        width: 93%;
+
     }
 
 }
