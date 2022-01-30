@@ -1726,7 +1726,7 @@ input[type=checkbox]::before {
 
     .container-grid-podcast main .rijEen {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 50px;
     }
 
