@@ -1514,12 +1514,8 @@ label,
         height: 60vh;
     }
 
-    .container-grid-contact aside {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .container-grid-contact aside {
+    .container-grid-contact .gegevens {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -1732,6 +1728,7 @@ label,
         z-index: -5;
     }
 
+
     .container-grid-home aside article .homeOverons {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1770,5 +1767,10 @@ label,
 
     .container-grid-proj main {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .container-grid-agenda main .agendaAlles {
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 }
