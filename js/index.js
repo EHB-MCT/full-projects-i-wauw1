@@ -16,25 +16,8 @@ function sluitLijst() {
     document.getElementById("x-nav-id").style.display = 'none';
 }
 
-function infoWorkshops() {
-    if (document.getElementById("bannerTekst").style.height == "300px" && document.getElementById("bannerTekst").style.overflow == "visible") {
-        document.getElementById("bannerTekst").style.height = "220px";
-        document.getElementById("bannerTekst").style.overflow = "hidden ";
-    } else {
-        document.getElementById("bannerTekst").style.height = "300px";
-        document.getElementById("bannerTekst").style.overflow = "visible";
-    }
-}
 
-function infoWorkshopsTwee() {
-    if (document.getElementById("bannerTekstTwee").style.height == "300px" && document.getElementById("bannerTekstTwee").style.overflow == "visible") {
-        document.getElementById("bannerTekstTwee").style.height = "220px";
-        document.getElementById("bannerTekstTwee").style.overflow = "hidden ";
-    } else {
-        document.getElementById("bannerTekstTwee").style.height = "300px";
-        document.getElementById("bannerTekstTwee").style.overflow = "visible";
-    }
-}
+
 
 function homeCarousel() {
     if (document.getElementById("homeWorkshop").style.display == "grid") {
