@@ -678,7 +678,7 @@ video {
     position: absolute;
     background-color: white;
     max-width: 45%;
-    top: 40%;
+    top: 20%;
     border-radius: 6px;
     margin: auto;
     padding: 22px;
@@ -1374,14 +1374,8 @@ label,
     }
 
     .box-test .text-box {
-        animation: 1s ease-out 0s 1 tekstCookie;
-        position: absolute;
-        background-color: white;
         max-width: 35%;
         top: 40%;
-        border-radius: 6px;
-        margin: auto;
-        padding: 22px;
         left: 32%;
     }
 
