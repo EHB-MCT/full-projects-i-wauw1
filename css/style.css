@@ -1684,6 +1684,10 @@ label,
         font-size: 11em;
     }
 
+    video {
+        width: 1200px;
+    }
+
     .desktop {
         visibility: visible;
         display: grid;
