@@ -911,6 +911,13 @@ label,
         border-bottom: 1px solid white;
     }
 
+    .socialmedia {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        margin-top: 2%;
+    }
+
     footer aside {
         display: grid;
         justify-items: center;
