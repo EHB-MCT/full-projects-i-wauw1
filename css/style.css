@@ -533,7 +533,7 @@ header {
 
 .container-grid-home main div:nth-child(1) {
     justify-content: start;
-    padding-left: 20%;
+    padding-left: 0;
 }
 
 .container-grid-home main div:nth-child(2) {
@@ -1681,6 +1681,12 @@ label,
     .hamburger-nav span {
         height: 5px;
     }
+
+    .container-grid-home main div:nth-child(1) {
+        justify-content: start;
+        padding-left: 20%;
+    }
+
 }
 
 
