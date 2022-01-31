@@ -1109,7 +1109,7 @@ label,
 
 
     .container-grid-home div img {
-        width: auto;
+        width: 100%;
     }
 
     .container-grid-home main h1 {
