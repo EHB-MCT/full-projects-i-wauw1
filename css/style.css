@@ -307,6 +307,8 @@ header {
 .container-grid-over p,
 .container-grid-proj p,
 .container-grid-podcastCu p,
+.container-grid-agenda p,
+.container-grid-contact p,
 .container-grid-home p {
     font-size: 20px;
     width: 80%;
@@ -338,6 +340,16 @@ header {
     text-decoration: none;
     padding: 0% 2%;
     font-size: 24px;
+}
+
+main aside .knop {
+    border: 2px solid #231f20;
+    text-decoration: none;
+    padding: 0% 2%;
+    font-size: 24px;
+    background-color: #fefced;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .container-grid-home main div figure {
@@ -710,9 +722,8 @@ video {
 
 label,
 .text-box input {
-    font-size: 40px;
-    width: 93%;
-
+    font-size: 35px;
+    width: 55%;
 }
 
 .text-box form {
@@ -819,12 +830,6 @@ video {
     width: 100%;
 }
 
-label,
-.text-box input {
-    font-size: 16px;
-    width: 87%;
-}
-
 .gegevens {
     text-align: center;
 }
@@ -836,6 +841,16 @@ label,
 .container-grid-contact main aside form p {
     margin-top: 49px;
 }
+
+.container-grid-contact main div aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    width: 100%;
+}
+
 
 @media (min-width: 768px) {
     .uitlegWauw {
@@ -1578,7 +1593,7 @@ label,
     }
 
     textarea {
-        width: 69%;
+        width: 100%;
     }
 
     .container-grid-contact main div h1 {
@@ -1731,6 +1746,20 @@ label,
         font-size: 36px;
     }
 
+    .container-grid-contact main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url(../images/banner.png);
+        height: auto;
+    }
+
+    .container-grid-contact .gegevens {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
 }
 
 
@@ -1748,6 +1777,12 @@ label,
         width: 362px;
     }
 
+    .container-grid-contact main form {
+        line-height: 13px;
+        background-color: #fefced;
+        padding: 6%;
+    }
+
     .box-test h3,
     .container-grid-agenda h3,
     .container-grid-contact h3 {
@@ -1759,6 +1794,12 @@ label,
 @media (min-width: 1200px) {
     .container-grid-home main h1 {
         font-size: 11em;
+    }
+
+    .container-grid-contact main form {
+        line-height: 84px;
+        background-color: rgb(254, 252, 237);
+        padding: 16%;
     }
 
     .container-grid-over main {
