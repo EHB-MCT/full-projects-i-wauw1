@@ -48,7 +48,7 @@ body {
 
 .hamburger-nav span {
     width: 100px;
-    height: 10px;
+    height: 5px;
     background-color: #231f20;
     animation: 1s ease-out hamburgerNav;
 }
@@ -1676,6 +1676,10 @@ label,
 
     .hamburger-check {
         display: none;
+    }
+
+    .hamburger-nav span {
+        height: 5px;
     }
 }
 
