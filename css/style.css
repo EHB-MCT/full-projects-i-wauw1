@@ -40,8 +40,9 @@ body {
 .x-nav {
     color: #231f20;
     display: grid;
-    justify-content: end;
+    justify-content: center;
     visibility: hidden;
+    align-content: center;
     display: none;
     font-size: 50px;
 }
@@ -226,7 +227,7 @@ header {
 .container-grid-contact header nav,
 .container-grid-podcast header nav,
 .container-grid-podcastCu header nav {
-    display: grid;
+    display: none;
     align-items: center;
 }
 
@@ -273,7 +274,6 @@ header {
 
 .container-grid-proj main h2,
 .container-grid-over main h2,
-.container-grid-over aside h2,
 .container-grid-agenda main h2,
 .container-grid-contact main h2,
 .container-grid-podcast main h2,
@@ -379,8 +379,9 @@ header {
     background-color: #d25a27;
 }
 
+
 .naamStephanie figure {
-    width: 362px;
+    width: 282px;
     height: 17px;
     margin-top: -24px;
     background-color: #d25a27;
@@ -598,9 +599,9 @@ form div {
     height: 40vh;
     display: grid;
     align-items: center;
-    font-size: 6em;
+    font-size: 4em;
     font-weight: bold;
-    background-image: url("../images/WAUW_blue.jpg");
+    background-image: url(../images/WAUW_blue.jpg);
     color: white;
     padding: 5%;
 }
@@ -822,6 +823,10 @@ label,
 @media (min-width: 768px) {
     .uitlegWauw {
         display: grid;
+    }
+
+    .x-nav {
+        align-content: end;
     }
 
     .container-grid-home header nav,
@@ -1707,6 +1712,16 @@ label,
     header {
         font-size: 13px;
     }
+
+    .container-grid-over .bannerBijde {
+
+        font-size: 6em;
+    }
+
+    .naamStephanie figure {
+        width: 362px;
+    }
+
 }
 
 @media (min-width: 1200px) {
