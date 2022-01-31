@@ -962,9 +962,6 @@ label,
         grid-template-columns: 1fr 1fr;
     }
 
-
-
-
     .container-grid-over header aside h1 {
         color: #231f20;
         background-color: #fefced;
@@ -1112,6 +1109,10 @@ label,
 
     .container-grid-home div img {
         width: 100%;
+    }
+
+    .container-grid-home main div img {
+        width: auto;
     }
 
     .container-grid-home main h1 {
