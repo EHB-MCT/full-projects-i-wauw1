@@ -899,11 +899,11 @@ label,
     }
 
     footer div {
-        width: 75%;
         margin: auto;
     }
 
     footer div div {
+        width: 39%;
         padding-top: 1%;
         margin-top: 1%;
         padding-bottom: 1%;
