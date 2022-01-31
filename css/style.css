@@ -350,7 +350,7 @@ header {
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeHalf;
 }
 
-.container-grid-home aside article img {
+.container-grid-home aside img {
     width: 100%;
 }
 
@@ -1034,6 +1034,14 @@ label,
     }
 
     .container-grid-home aside article {
+        display: grid;
+        grid-template-columns: 1fr 6fr 1fr;
+        letter-spacing: 3px;
+        line-height: 23px;
+        grid-gap: 56px;
+    }
+
+    .container-grid-home aside .home-cd {
         display: grid;
         grid-template-columns: 1fr 6fr 1fr;
         letter-spacing: 3px;
@@ -1733,6 +1741,16 @@ label,
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 56px;
+    }
+
+    .container-grid-home aside .home-cd .homeOverons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 56px;
+    }
+
+    .container-grid-home .home-cd img {
+        width: 100%;
     }
 
     .container-grid-podcast main .rijEen {
