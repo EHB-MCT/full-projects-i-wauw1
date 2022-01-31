@@ -825,6 +825,17 @@ label,
     width: 87%;
 }
 
+.gegevens {
+    text-align: center;
+}
+
+.container-grid-contact main aside form input {
+    width: 86%;
+}
+
+.container-grid-contact main aside form p {
+    margin-top: 49px;
+}
 
 @media (min-width: 768px) {
     .uitlegWauw {
@@ -1559,6 +1570,15 @@ label,
     .container-grid-contact main form {
         line-height: 84px;
         background-color: #fefced;
+        padding: 16%;
+    }
+
+    .container-grid-contact main aside form input {
+        width: 80%;
+    }
+
+    textarea {
+        width: 69%;
     }
 
     .container-grid-contact main div h1 {
@@ -1574,7 +1594,7 @@ label,
     .container-grid-contact main div:nth-child(2) {
         display: flex;
         align-items: end;
-        margin-top: 13%;
+        margin-top: 3%;
         justify-content: center;
     }
 
