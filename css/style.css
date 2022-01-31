@@ -33,7 +33,7 @@ body {
 .hamburger-nav {
     display: grid;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -295,6 +295,10 @@ header {
 
 .container-grid-home aside h2 {
     font-size: 3em;
+}
+
+.container-grid-home header h2 {
+    font-size: 1em;
 }
 
 .container-grid-over p,
@@ -805,7 +809,7 @@ input[type=checkbox]::before {
 }
 
 video {
-    width: 500px;
+    width: 100%;
 }
 
 label,
@@ -814,11 +818,22 @@ label,
     width: 87%;
 }
 
+
 @media (min-width: 768px) {
     .uitlegWauw {
         display: grid;
     }
 
+    .container-grid-home header nav,
+    .container-grid-proj header nav,
+    .container-grid-over header nav,
+    .container-grid-agenda header nav,
+    .container-grid-contact header nav,
+    .container-grid-podcast header nav,
+    .container-grid-podcastCu header nav {
+        display: grid;
+        align-items: center;
+    }
 
     .desktop {
         display: none;
@@ -1663,10 +1678,6 @@ label,
         height: auto;
     }
 
-    video {
-        width: 783px;
-    }
-
     label,
     .text-box input {
         font-size: 20px;
@@ -1685,6 +1696,14 @@ label,
     .container-grid-home main div:nth-child(1) {
         justify-content: start;
         padding-left: 20%;
+    }
+
+    .hamburger-nav {
+        justify-content: end;
+    }
+
+    .hamburger-check li {
+        font-size: 36px;
     }
 
 }
