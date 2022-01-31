@@ -857,6 +857,16 @@ textarea {
         display: grid;
     }
 
+    .container-grid-over p,
+    .container-grid-proj p,
+    .container-grid-podcastCu p,
+    .container-grid-agenda p,
+    .container-grid-contact p,
+    .container-grid-home p {
+        font-size: 20px;
+
+    }
+
     .x-nav {
         align-content: end;
     }
