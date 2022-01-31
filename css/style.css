@@ -1522,7 +1522,6 @@ label,
     .container-grid-contact aside {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
     }
 
     .container-grid-contact main {
@@ -1672,6 +1671,9 @@ label,
 
     }
 
+    .hamburger-check {
+        display: none;
+    }
 }
 
 
