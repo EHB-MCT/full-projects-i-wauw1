@@ -363,7 +363,7 @@ main aside .knop {
 .container-grid-podcastCu main figure {
     width: 150px;
     height: 17px;
-    margin-top: -20px;
+    margin-top: 1px;
     background-color: #d25a27;
     z-index: -5;
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeHalf;
