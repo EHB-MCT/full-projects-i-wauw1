@@ -547,7 +547,9 @@ main aside .knop {
     background-image: url("../images/wauwman.jpeg")
 }
 
-
+.utopia .workEen h2 {
+    color: #231f20;
+}
 
 .utopia .workEen {
     background-image: url("../images/Betonstad.png")
@@ -959,6 +961,10 @@ textarea {
         display: grid;
     }
 
+    .uitlegWauwDiv div h3 a:hover {
+        color: #584e51;
+    }
+
     .container-grid-over p,
     .container-grid-proj p,
     .container-grid-podcastCu p,
@@ -1081,12 +1087,13 @@ textarea {
         margin-top: 2%;
     }
 
+
     footer aside {
         display: grid;
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 2%;
-        width: 35%;
+        width: 71%;
         margin: auto;
     }
 
@@ -1896,9 +1903,6 @@ textarea {
 
     .container-grid-home .homeOverons div {
         display: block;
-        justify-content: center;
-        margin-top: 2%;
-        /* margin-bottom: 11%; */
     }
 
 
@@ -1955,6 +1959,7 @@ textarea {
     .socialmedia {
         margin-top: 0;
     }
+
 }
 
 @media (min-width: 1200px) {
@@ -2077,5 +2082,14 @@ textarea {
     .container-grid-agenda main .agendaAlles {
         padding-top: 1%;
         padding-bottom: 1%;
+    }
+
+    footer aside {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 2%;
+        width: 35%;
+        margin: auto;
     }
 }
