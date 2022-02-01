@@ -1894,6 +1894,12 @@ textarea {
         justify-content: center;
     }
 
+    .container-grid-home .homeOverons div {
+        display: block;
+        justify-content: center;
+        margin-top: 2%;
+        /* margin-bottom: 11%; */
+    }
 
 
 }
