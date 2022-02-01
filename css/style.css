@@ -863,8 +863,7 @@ textarea {
     .container-grid-agenda p,
     .container-grid-contact p,
     .container-grid-home p {
-        font-size: 20px;
-
+        font-size: 13px;
     }
 
     .x-nav {
@@ -883,8 +882,8 @@ textarea {
     }
 
     .desktop {
-        display: none;
-        visibility: hidden;
+        display: grid;
+        visibility: visible;
     }
 
     header {
@@ -921,7 +920,7 @@ textarea {
     }
 
     .container-grid-home aside h2 {
-        font-size: 1em;
+        font-size: 4em;
     }
 
     .container-grid-home header div,
@@ -995,7 +994,23 @@ textarea {
         color: white;
     }
 
+    .container-grid-home header,
+    .container-grid-proj header,
+    .container-grid-over header,
+    .container-grid-agenda header,
+    .container-grid-contact header,
+    .container-grid-podcast header,
+    .container-grid-podcastCu header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    .hamburger-nav {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 
     .container-grid-home header,
     .container-grid-proj header,
@@ -1776,6 +1791,15 @@ textarea {
 @media (min-width: 1024px) {
     header {
         font-size: 13px;
+    }
+
+    .container-grid-over p,
+    .container-grid-proj p,
+    .container-grid-podcastCu p,
+    .container-grid-agenda p,
+    .container-grid-contact p,
+    .container-grid-home p {
+        font-size: 20px;
     }
 
     .container-grid-contact main {
