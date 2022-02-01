@@ -1796,6 +1796,8 @@ textarea {
 
 
 
+
+
 }
 
 
@@ -1838,6 +1840,17 @@ textarea {
         margin-top: 20px;
     }
 
+    .home-cd .knop {
+        justify-content: start;
+    }
+
+    .container-grid-home main h2 {
+        font-size: 4em;
+    }
+
+    .socialmedia {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 1200px) {
