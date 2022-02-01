@@ -338,14 +338,14 @@ header {
 .knop a {
     border: 2px solid #231f20;
     text-decoration: none;
-    padding: 0% 2%;
+    padding: 1% 2%;
     font-size: 24px;
 }
 
 main aside .knop {
     border: 2px solid #231f20;
     text-decoration: none;
-    padding: 0% 2%;
+    padding: 1% 2%;
     font-size: 24px;
     background-color: #fefced;
     margin-top: 4%;
@@ -995,6 +995,8 @@ textarea {
         justify-items: center;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin-top: 2%;
+        width: 35%;
+        margin: auto;
     }
 
     footer aside ul {
