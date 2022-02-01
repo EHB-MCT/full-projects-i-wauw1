@@ -53,6 +53,38 @@ function log() {
     }
 }
 
+
+function homePijlte() {
+    document.getElementById("architectId").style.display = "none";
+    document.getElementById("artId").style.display = "grid";
+}
+
+function artTerug() {
+    document.getElementById("artId").style.display = "none";
+    document.getElementById("architectId").style.display = "grid";
+}
+
+function artDoor() {
+    document.getElementById("artId").style.display = "none";
+    document.getElementById("utopiaId").style.display = "grid";
+}
+
+function utopiaTerug() {
+    document.getElementById("utopiaId").style.display = "none";
+    document.getElementById("artId").style.display = "grid";
+}
+
+function utopiaDoor() {
+    document.getElementById("utopiaId").style.display = "none";
+    document.getElementById("urbanismId").style.display = "grid";
+}
+
+function urbanismTerug() {
+    document.getElementById("urbanismId").style.display = "none";
+    document.getElementById("utopiaId").style.display = "grid";
+}
+
+
 function checkKinderen() {
     if (document.getElementById("kinderCheck").checked) {
         document.getElementById("ouder").style.display = "none";

@@ -473,11 +473,11 @@ main aside .knop {
     grid-gap: 28px;
 }
 
-.minigolf,
-.zomercafe,
-.betonstad,
-.droomstad,
-.bewegendeStad {
+.workEen,
+.workTwee,
+.workDrie,
+.workVier,
+.workVijf {
     border: 1px solid black;
     display: grid;
     align-content: end;
@@ -487,7 +487,7 @@ main aside .knop {
 }
 
 .workshopArchi h2,
-.bewegendeStad h2 {
+.workEen h2 {
     font-size: 6em !important;
     font-weight: bold;
     color: #fefced;
@@ -503,34 +503,125 @@ main aside .knop {
 }
 
 .workshopArchi .groupWorks,
-.bewegendeStad {
+.workEen {
     height: 75vh;
 }
 
-.bewegendeStad {
+.architect .workEen {
     background-image: url("../images/Bewegendestad1.jpeg")
 }
 
-.minigolf {
+.architect .workTwee {
+    background-image: url("../images/au_bord.jpeg")
+}
+
+.architect .workDrie {
+    background-image: url("../images/wauwostrade.jpeg")
+}
+
+.architect .workVier {
+    background-image: url("../images/het-plan.jpeg")
+}
+
+.architect .workVier {
+    background-image: url("../images/SAUS.jpeg")
+}
+
+.art .workEen {
+    background-image: url("../images/point.jpeg")
+}
+
+.art.workTwee {
+    background-image: url("../images/toren-van-babel.jpeg")
+}
+
+.art.workDrie {
+    background-image: url("../images/you-are-here.jpeg")
+}
+
+.art.workVier {
+    background-image: url("../images/wauwostrade.jpeg")
+}
+
+.art .workVijf {
+    background-image: url("../images/wauwman.jpeg")
+}
+
+
+
+.utopia .workEen {
+    background-image: url("../images/Betonstad.png")
+}
+
+.utopia .workTwee {
+    background-image: url("../images/Droomhuizen4.jpeg")
+}
+
+.utopia .workDrie {
+    background-image: url("../images/klavettje-vier.jpg")
+}
+
+.utopia .workVier {
+    background-image: url("../images/Periferia4.jpeg")
+}
+
+.utopia .workVijf {
+    background-image: url("../images/speelplaats-anderlecht.jpeg")
+}
+
+.urbanism .workEen {
+    background-image: url("../images/point.jpeg")
+}
+
+.urbanism .workTwee {
+    background-image: url("../images/Droomhuizen4.jpeg")
+}
+
+.urbanism .workDrie {
+    background-image: url("../images/Zomercafe4.jpeg")
+}
+
+.urbanism .workVier {
+    background-image: url("../images/minigolf1.jpeg")
+}
+
+.urbanism .workVijf {
+    background-image: url("../images/SAUS.jpeg")
+}
+
+.workEen {
+    background-image: url("../images/Bewegendestad1.jpeg")
+}
+
+.workTwee {
     background-image: url("../images/minigolf1.jpeg");
 }
 
-.zomercafe {
+.workDrie {
     background-image: url("../images/Zomercafe4.jpeg");
 }
 
-.container-grid-proj main .betonstad {
+.workVier {
     grid-row: 2/3;
     grid-column: 1/3;
     background-image: url("../images/Betonstad.jpeg");
 }
 
-.container-grid-proj main .droomstad {
+.workVijf {
     grid-row: 3/4;
     grid-column: 1/3;
     background-image: url("../images/Droomhuizen4.jpeg");
 }
 
+.architect {
+    display: grid;
+}
+
+.art,
+.utopia,
+.urbanism {
+    display: none;
+}
 
 .container .container-grid-home main img {
     width: 100%;
@@ -1797,6 +1888,11 @@ textarea {
     }
 
 
+    .knopVoor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 
 
