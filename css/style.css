@@ -482,8 +482,11 @@ main aside .knop {
 .bewegendeStad h2 {
     font-size: 6em !important;
     font-weight: bold;
-    color: white;
+    color: #fefced;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
 }
+
 
 .workshopKinderen div:nth-child(2),
 .workshopKinderen div:nth-child(3),
