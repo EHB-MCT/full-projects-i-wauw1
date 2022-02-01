@@ -359,11 +359,19 @@ main aside .knop {
     background-color: #d25a27;
 }
 
-.container-grid-home aside figure,
-.container-grid-podcastCu main figure {
+.container-grid-home aside:nth-child(1) figure {
     width: 150px;
     height: 17px;
     margin-top: 1px;
+    background-color: #d25a27;
+    z-index: -5;
+    animation: 1s ease-out 0s 1 effectSchuivenLijntjeHalf;
+}
+
+.container-grid-home aside figure {
+    width: 150px;
+    height: 17px;
+    margin-top: -24px;
     background-color: #d25a27;
     z-index: -5;
     animation: 1s ease-out 0s 1 effectSchuivenLijntjeHalf;
