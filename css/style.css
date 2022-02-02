@@ -333,10 +333,6 @@ header {
 .container-grid-contact p,
 .container-grid-works p,
 .container-grid-home p {
-    font-size: 20px;
-    width: 80%;
-    margin: auto;
-    padding: 3%;
     line-height: 26px;
     letter-spacing: 3px;
 }
@@ -696,6 +692,16 @@ main aside .knop {
 
 .container-grid-home main .knop a {
     font-size: 24px;
+}
+
+.container-grid-contact form input {
+    border: none;
+    background-color: #fefced;
+    border-bottom: 1px solid black;
+}
+
+.container-grid-contact form input {
+    width: 100%;
 }
 
 .container-grid-home nav ul li a:hover {
@@ -1424,6 +1430,12 @@ textarea {
         background-color: #231f20;
     }
 
+    .container-grid-contact .knop:hover {
+        cursor: pointer;
+        color: white;
+        background-color: #231f20;
+    }
+
     .container-grid-home nav ul li a:hover {
         color: #231f20;
         animation: 1s ease-out effectSchuivenNav;
@@ -1815,7 +1827,7 @@ textarea {
     }
 
     .container-grid-contact main aside form input {
-        width: 80%;
+        width: 100%;
     }
 
     textarea {
