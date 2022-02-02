@@ -1419,6 +1419,7 @@ textarea {
 
     .container-grid-over main div p {
         max-width: 80%;
+        margin: auto;
     }
 
     .container-grid-home main .knop a {
