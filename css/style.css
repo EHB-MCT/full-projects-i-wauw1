@@ -149,7 +149,6 @@ h1 {
     margin-top: -7px;
     background-color: #d25a27;
     z-index: -5;
-    animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
 }
 
 .nav-figureUitleg {
@@ -961,8 +960,28 @@ textarea {
         display: grid;
     }
 
-    .uitlegWauwDiv div h3 a:hover {
-        color: #584e51;
+    .goog-te-banner-frame.skiptranslate {
+        display: none !important;
+    }
+
+    body {
+        top: 0px !important;
+    }
+
+    .goog-te-menu-frame {
+        max-width: 100% !important;
+    }
+
+    .goog-te-menu2 {
+        max-width: 100% !important;
+        overflow-x: scroll !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+    }
+
+    .uitlegWauwDiv div h3 a:hover,
+    .container-grid-proj main a:hover {
+        color: #d25a27;
     }
 
     .container-grid-over p,
@@ -1965,6 +1984,10 @@ textarea {
 @media (min-width: 1200px) {
     .container-grid-home main h1 {
         font-size: 11em;
+    }
+
+    .nav-figure {
+        animation: 1s ease-out 0s 1 effectSchuivenLijntjeNav;
     }
 
     .container-grid-contact main form {
