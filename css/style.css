@@ -16,6 +16,11 @@ body {
 
 #google_translate_element {
     text-align: end;
+    margin-right: 2%;
+}
+
+.goog-te-gadget img {
+    display: none;
 }
 
 .hamburger-check {
@@ -1120,10 +1125,6 @@ textarea {
         margin-top: 2%;
         width: 71%;
         margin: auto;
-    }
-
-    footer aside ul {
-        display: grid;
     }
 
     footer aside ul li {
