@@ -5,6 +5,8 @@ body {
 }
 
 .container-grid-home,
+.container-grid-works p,
+.container-grid-works,
 .container-grid-proj,
 .container-grid-podcast,
 .container-grid-podcastCu,
@@ -15,8 +17,26 @@ body {
 }
 
 #google_translate_element {
+    background-color: #fefced !important;
     text-align: end;
     margin-right: 2%;
+}
+
+.goog-te-menu2 {
+    background-color: #fefced !important;
+}
+
+.goog-te-gadget-simple {
+    background-color: #fefced !important;
+    border: 2px solid #231f20 !important;
+    text-decoration: none;
+    padding: 1% 2%;
+    font-size: 24px;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+    text-decoration: none;
+    margin-left: 8px;
 }
 
 .goog-te-gadget img {
@@ -36,7 +56,6 @@ body {
 }
 
 .desktop {
-    display: none;
     visibility: hidden;
 }
 
@@ -46,6 +65,7 @@ body {
     justify-content: center;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 
 .x-nav {
     color: #231f20;
@@ -60,50 +80,22 @@ body {
 
 .hamburger-nav span {
     width: 50px;
-    height: 5px;
+    height: 15px;
     background-color: #231f20;
-    animation: 1s ease-out hamburgerNav;
+
 }
 
 .carousel {
     display: none;
 }
 
-@keyframes hamburgerNav {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 50px;
-    }
-}
-
-@keyframes hamburgerNavTwee {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 35px;
-    }
-}
-
-@keyframes hamburgerNavDrie {
-    0% {
-        width: 0;
-    }
-
-    100% {
-        width: 25px;
-    }
-}
 
 
 .container-grid-proj aside span:nth-child(2),
 .container-grid-over aside span:nth-child(2),
 .container-grid-contact aside span:nth-child(2),
 .container-grid-home aside span:nth-child(2),
+.container-grid-works aside span:nth-child(2),
 .container-grid-podcast aside span:nth-child(2),
 .container-grid-podcastCu aside span:nth-child(2),
 .container-grid-agenda aside span:nth-child(2) {
@@ -114,6 +106,7 @@ body {
 .container-grid-proj aside span:nth-child(3),
 .container-grid-over aside span:nth-child(3),
 .container-grid-home aside span:nth-child(3),
+.container-grid-works aside span:nth-child(3),
 .container-grid-podcast aside span:nth-child(3),
 .container-grid-podcastCu aside span:nth-child(3),
 .container-grid-agenda aside span:nth-child(3),
@@ -168,6 +161,7 @@ h1 {
 }
 
 .container-grid-home header,
+.container-grid-works header,
 .container-grid-proj header,
 .container-grid-over header,
 .container-grid-agenda header,
@@ -183,7 +177,21 @@ header {
     border-bottom: 1px solid black;
 }
 
+.title {
+    margin-left: 5%;
+}
+
+.lijstGroep a {
+    display: contents;
+}
+
+.lijstGroep a:hover {
+    background-color: #2d2d2d;
+    color: #fefced;
+}
+
 .container-grid-home header div,
+.container-grid-works header div,
 .container-grid-proj header div,
 .container-grid-over header div,
 .container-grid-contact header div,
@@ -195,6 +203,7 @@ header {
 }
 
 .container-grid-home header div img,
+.container-grid-works header div img,
 .container-grid-proj header div img,
 .container-grid-over header div img,
 .container-grid-agenda header div img,
@@ -206,6 +215,7 @@ header {
 }
 
 .container-grid-home header div a,
+.container-grid-works header div a,
 .container-grid-over header div a,
 .container-grid-agenda header div a,
 .container-grid-contact header div a,
@@ -232,17 +242,19 @@ header {
 
 
 .container-grid-home header nav,
+.container-grid-works header nav,
 .container-grid-proj header nav,
 .container-grid-over header nav,
 .container-grid-agenda header nav,
 .container-grid-contact header nav,
 .container-grid-podcast header nav,
 .container-grid-podcastCu header nav {
-    display: none;
+
     align-items: center;
 }
 
 .container-grid-home header nav ul,
+.container-grid-works header nav ul,
 .container-grid-proj header nav ul,
 .container-grid-over header nav ul,
 .container-grid-agenda header nav ul,
@@ -254,6 +266,7 @@ header {
 }
 
 .container-grid-home header nav ul li,
+.container-grid-works header nav ul li,
 .container-grid-proj header nav ul li,
 .container-grid-over header nav ul li,
 .container-grid-agenda header nav ul li,
@@ -274,6 +287,7 @@ header {
 }
 
 .container-grid-home main h1,
+.container-grid-works main h1,
 .container-grid-proj main h1,
 .container-grid-over main h1,
 .container-grid-agenda main h1,
@@ -317,6 +331,7 @@ header {
 .container-grid-podcastCu p,
 .container-grid-agenda p,
 .container-grid-contact p,
+.container-grid-works p,
 .container-grid-home p {
     font-size: 20px;
     width: 80%;
@@ -963,6 +978,37 @@ textarea {
     width: 100%;
 }
 
+.container-grid-works main div h2:nth-child(1) {
+    color: #d25a27;
+    border-right: 1px solid #2d2d2d;
+}
+
+.workAlles {
+    border-left: 1px solid #2d2d2d;
+}
+
+.workAlles .tien,
+.twintig,
+.dertig {
+    border-bottom: 1px solid #2d2d2d;
+}
+
+.lijstGroep {
+    display: flex;
+    border-top: 1px solid #2d2d2d;
+    border-bottom: 1px solid #2d2d2d;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.lijstGroep h2:nth-child(2) {
+    margin-left: 2%;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
 
 @media (min-width: 768px) {
     .uitlegWauw {
@@ -971,9 +1017,7 @@ textarea {
 
 
 
-    .goog-te-banner-frame.skiptranslate {
-        display: none !important;
-    }
+
 
     body {
         top: 0px !important;
@@ -1000,7 +1044,8 @@ textarea {
     .container-grid-podcastCu p,
     .container-grid-agenda p,
     .container-grid-contact p,
-    .container-grid-home p {
+    .container-grid-home p,
+    .container-grid-works p {
         font-size: 13px;
     }
 
@@ -1009,6 +1054,7 @@ textarea {
     }
 
     .container-grid-home header nav,
+    .container-grid-works header nav,
     .container-grid-proj header nav,
     .container-grid-over header nav,
     .container-grid-agenda header nav,
@@ -1047,6 +1093,7 @@ textarea {
     }
 
     .container-grid-home header div img,
+    .container-grid-works header div img,
     .container-grid-proj header div img,
     .container-grid-over header div img,
     .container-grid-agenda header div img,
@@ -1061,7 +1108,12 @@ textarea {
         font-size: 4em;
     }
 
+    .container-grid-works div h2 {
+        font-size: 3em;
+    }
+
     .container-grid-home header div,
+    .container-grid-works header div,
     .container-grid-proj header div,
     .container-grid-over header div,
     .container-grid-contact header div,
@@ -1085,6 +1137,7 @@ textarea {
     .container-grid-over p,
     .container-grid-proj p,
     .container-grid-podcastCu p,
+    .container-grid-works p,
     .container-grid-home p {
         font-size: 16px;
     }
@@ -1132,6 +1185,7 @@ textarea {
     }
 
     .container-grid-home header,
+    .container-grid-works header,
     .container-grid-proj header,
     .container-grid-over header,
     .container-grid-agenda header,
@@ -1150,6 +1204,7 @@ textarea {
     }
 
     .container-grid-home header,
+    .container-grid-works header,
     .container-grid-proj header,
     .container-grid-over header,
     .container-grid-agenda header,
@@ -1162,6 +1217,7 @@ textarea {
     }
 
     .container-grid-home,
+    .container-grid-works,
     .container-grid-proj,
     .container-grid-over,
     .container-grid-agenda,
@@ -1298,6 +1354,7 @@ textarea {
     }
 
     .container-grid-home header div:nth-child(1),
+    .container-grid-works header div:nth-child(1),
     .container-grid-proj header div:nth-child(1),
     .container-grid-over header div:nth-child(1),
     .container-grid-agenda header div:nth-child(1),
@@ -1368,6 +1425,13 @@ textarea {
     }
 
     .container-grid-home nav ul li a:hover {
+        color: #231f20;
+        animation: 1s ease-out effectSchuivenNav;
+        background-color: #d25a27;
+
+    }
+
+    .container-grid-works nav ul li a:hover {
         color: #231f20;
         animation: 1s ease-out effectSchuivenNav;
         background-color: #d25a27;
@@ -1884,7 +1948,7 @@ textarea {
     .text-box input {
         font-size: 20px;
         width: 93%;
-
+        margin-right: 22px;
     }
 
     .hamburger-check {
@@ -1945,7 +2009,8 @@ textarea {
     .container-grid-podcastCu p,
     .container-grid-agenda p,
     .container-grid-contact p,
-    .container-grid-home p {
+    .container-grid-home p,
+    .container-grid-works p {
         font-size: 20px;
     }
 
