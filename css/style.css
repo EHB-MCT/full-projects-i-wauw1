@@ -185,9 +185,8 @@ header {
     display: contents;
 }
 
-.lijstGroep a:hover {
-    background-color: #2d2d2d;
-    color: #fefced;
+.lijstGroep a:hover h2 {
+    font-weight: bold;
 }
 
 .container-grid-home header div,
@@ -984,8 +983,10 @@ textarea {
     width: 100%;
 }
 
-.container-grid-works main div h2:nth-child(1) {
+.container-grid-works main div div h2:nth-child(1) {
     color: #d25a27;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
     border-right: 1px solid #2d2d2d;
 }
 
