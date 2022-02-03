@@ -879,7 +879,7 @@ video {
 
 label,
 .text-box input {
-    font-size: 35px;
+    font-size: 16px;
     width: 65%;
 }
 
@@ -1054,9 +1054,6 @@ textarea {
     main .rijEen:nth-child(2) {
         grid-template-columns: 1fr;
     }
-
-
-
 
     body {
         top: 0px !important;
