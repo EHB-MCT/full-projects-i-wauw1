@@ -153,6 +153,10 @@ h1 {
     z-index: -5;
 }
 
+i:hover {
+    color: #d25a27;
+}
+
 .nav-figureUitleg {
     width: 25px;
     height: 5px;
