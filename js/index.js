@@ -23,9 +23,13 @@ function homeCarousel() {
     if (document.getElementById("homeWorkshop").style.display == "grid") {
         document.getElementById("homeOver").style.display = "grid";
         document.getElementById("homeWorkshop").style.display = "none";
+        document.getElementById("actiefKnop").style.backgroundColor = "#d25a27";
+        document.getElementById("actiefKnopTwee").style.backgroundColor = "#e9e9ed ";
     } else {
         document.getElementById("homeOver").style.display = "none";
         document.getElementById("homeWorkshop").style.display = "grid";
+        document.getElementById("actiefKnop").style.backgroundColor = "#e9e9ed ";
+        document.getElementById("actiefKnopTwee").style.backgroundColor = "#d25a27";
     }
 }
 
