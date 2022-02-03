@@ -160,6 +160,22 @@ h1 {
     z-index: -5;
 }
 
+.button5 {
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.button5:nth-child(1) {
+    background-color: #d25a27;
+}
+
+.carousel i:hover {
+    color: #d25a27;
+}
+
 .container-grid-home header,
 .container-grid-works header,
 .container-grid-proj header,
@@ -1343,6 +1359,7 @@ textarea {
         display: grid;
         align-items: center;
         justify-content: center;
+        display: flex;
     }
 
     .container-grid-home aside article div .knop {
