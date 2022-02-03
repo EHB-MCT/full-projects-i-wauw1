@@ -55,6 +55,10 @@ body {
     font-size: 40px;
 }
 
+.button5 {
+    display: none;
+}
+
 .desktop {
     visibility: hidden;
 }
@@ -166,10 +170,11 @@ i:hover {
 
 .button5 {
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 30px;
     margin: 5px;
+    background-color: grey;
 }
 
 .button5:nth-child(1) {
@@ -377,7 +382,7 @@ header {
     border: 2px solid #231f20;
     text-decoration: none;
     padding: 1% 2%;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 main aside .knop {
@@ -874,7 +879,7 @@ video {
 
 label,
 .text-box input {
-    font-size: 35px;
+    font-size: 16px;
     width: 65%;
 }
 
@@ -1042,12 +1047,17 @@ textarea {
         display: grid;
     }
 
+    .knop a {
+        font-size: 24px;
+    }
+
+    .button5 {
+        display: flex;
+    }
+
     main .rijEen:nth-child(2) {
         grid-template-columns: 1fr;
     }
-
-
-
 
     body {
         top: 0px !important;
@@ -1067,6 +1077,10 @@ textarea {
     .uitlegWauwDiv div h3 a:hover,
     .container-grid-proj main a:hover {
         color: #d25a27;
+    }
+
+    .container-grid-proj main .knop a:hover {
+        color: white;
     }
 
     .container-grid-over p,
@@ -1693,8 +1707,10 @@ textarea {
 
     .container-grid-agenda figure h3 {
         margin-top: 20px;
-        font-size: 33px;
+        font-size: 22px;
         margin-bottom: 20px;
+        font-weight: 500;
+
     }
 
     .box-test .text-box p {
