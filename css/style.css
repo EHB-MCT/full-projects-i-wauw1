@@ -55,6 +55,10 @@ body {
     font-size: 40px;
 }
 
+.button5 {
+    display: none;
+}
+
 .desktop {
     visibility: hidden;
 }
@@ -1041,6 +1045,10 @@ textarea {
 @media (min-width: 768px) {
     .uitlegWauw {
         display: grid;
+    }
+
+    .button5 {
+        display: flex;
     }
 
     main .rijEen:nth-child(2) {
