@@ -382,7 +382,7 @@ header {
     border: 2px solid #231f20;
     text-decoration: none;
     padding: 1% 2%;
-    font-size: 24px;
+    font-size: 14px;
 }
 
 main aside .knop {
@@ -1045,6 +1045,10 @@ textarea {
 @media (min-width: 768px) {
     .uitlegWauw {
         display: grid;
+    }
+
+    .knop a {
+        font-size: 24px;
     }
 
     .button5 {
