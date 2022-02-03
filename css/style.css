@@ -2012,9 +2012,7 @@ textarea {
         display: block;
     }
 
-    .container-grid-podcast .rijEen:nth-child(2) div img:hover {
-        border: 8px solid #d25a27;
-    }
+
 
 
 }
@@ -2023,6 +2021,10 @@ textarea {
 @media (min-width: 1024px) {
     header {
         font-size: 13px;
+    }
+
+    .container-grid-podcast .rijEen:nth-child(2) div img:hover {
+        border: 8px solid #d25a27;
     }
 
     main .rijEen:nth-child(2) {
