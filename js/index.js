@@ -48,7 +48,7 @@ function cdToeTuto() {
 function log() {
     var naamEen = document.getElementById("gebNaam").value;
     var wachtwoord = document.getElementById("ww").value;
-    if (naamEen == "ilhan" && wachtwoord == "anticheat123" || naamEen == "Ilhan" && wachtwoord == "vrijdag") {
+    if (naamEen == "demo" && wachtwoord == "demo" || naamEen == "Demo" && wachtwoord == "demo") {
         document.getElementById("loginText").style.display = "none";
     }
 }
