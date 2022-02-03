@@ -2049,7 +2049,9 @@ textarea {
         display: block;
     }
 
-
+    .title {
+        margin-top: 2%;
+    }
 
 
 }
