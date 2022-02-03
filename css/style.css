@@ -166,10 +166,11 @@ i:hover {
 
 .button5 {
     border: none;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 30px;
     margin: 5px;
+    background-color: grey;
 }
 
 .button5:nth-child(1) {
@@ -1069,6 +1070,10 @@ textarea {
         color: #d25a27;
     }
 
+    .container-grid-proj main .knop a:hover {
+        color: white;
+    }
+
     .container-grid-over p,
     .container-grid-proj p,
     .container-grid-podcastCu p,
@@ -1693,8 +1698,10 @@ textarea {
 
     .container-grid-agenda figure h3 {
         margin-top: 20px;
-        font-size: 33px;
+        font-size: 22px;
         margin-bottom: 20px;
+        font-weight: 500;
+
     }
 
     .box-test .text-box p {
